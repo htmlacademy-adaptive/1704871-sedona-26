@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <section class="section">
+          <div class="container hero__short">
+            <header class="header">
+              <div class="header__icon-logo">
+                <svg> <!-- ЛОГОТИП ГОРОДА -->
+                  <use width="190" height="96" xlink:href="img/sprite.svg#logo" alt="Логотип города"></use>
+              </svg>
+              </div>
+              <div class="header__hamburger">
+                <a class="header__hamburger">
+                  <span class="header__hamburger-plank"></span>
+                  <span class="header__hamburger-plank"></span>
+                  <span class="header__hamburger-plank"></span>
+                </a>
+              </div>
+            </header>
+            <div class="header__icon-sedona">
+              <svg> <!-- НАДПИСЬ SEDONA -->
+                  <use width="280" height="50" xlink:href="img/sprite.svg#sedona" alt="SEDONA"></use>
+              </svg>
+            </div>
+            <h3 class="header-form__title-desc">Оставьте свой отзыв</h3>
+            <p class="header-form__title-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container form">
+            <form action="#" method="post">
+              <h3 class="form__title-desc">Представьтесь:</h3>
+              <label for="name">
+                ИМЯ*:<input id="name" type="text">
+              </label>
+              <label for="surname">
+                ФАМИЛИЯ*:<input id="surname" type="text">
+              </label>
+              <label for="second-name">
+                ОТЧЕСТВО*:<input id="second-name" type="text">
+              </label>
+              <h3 class="form__title-desc">контактная информация:</h3>
+              <label for="phone">
+                КОНТАКТНЫЙ ТЕЛЕФОН*:<input id="phone" placeholder="Введите телефон" type="tel">
+              </label>
+              <label for="email">
+                ЭЛЕКТРОННАЯ ПОЧТА*:<input id="email" placeholder="Введите e-mail" type="tel">
+              </label>
+              <h3 class="form__title-desc">ваше общее впечатление:</h3>
+              <label for="">
+                <input type="radio" name="radio" value="positive"> Скорее положительное
+                <input type="radio" name="radio" value="negative"> Скорее отрицательное
+                <input type="radio" name="radio" value="idontknow"> Затрудняюсь ответить
+              </label>
+              <h3 class="form__title-desc">посещенные достопримечательности:</h3>
+              <label for="">
+                <input type="checkbox"> Мост Дьявола
+                <input type="checkbox"> Гора-Колокол
+                <input type="checkbox"> Слайд-парк
+                <input type="checkbox"> Красные скалы
+              </label>
+              <h3 class="form__title-desc">опишите свои эмоции:</h3>
+              <label for="">
+                <textarea placeholder="Опишите подробно все свои восторги" name="" id="" cols="30" rows="10"></textarea>
+              </label>
+              <label for="">
+                <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+                <p>* - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+              </label>
+            </form>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container footer">
+            <p class="footer__title">#visitSEDONA</p>
+            <div class="footer__social-networks">
+              <div class="footer__social-networks--item">
+                <a class="footer__social-networks--vk" href="#">
+                  <div class="footer__social-networks--vk"">
+                    <svg>
+                      <use width="48" height="48" xlink:href="img/sprite.svg#vk" alt="vk logo"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="footer__social-networks--item">
+                <a class="footer__social-networks--tg" href="#">
+                  <div class="footer__social-networks--tg">
+                    <svg>
+                      <use width="48" height="48" xlink:href="img/sprite.svg#tg" alt="tg logo"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="footer__social-networks--item">
+                <a class="footer__social-networks--youtube" href="#">
+                  <div class="footer__social-networks--youtube">
+                    <svg>
+                      <use width="48" height="48" xlink:href="img/sprite.svg#youtube" alt="youtube logo"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="footer__htmlacademy-sign">
+              <p class="footer__htmlacademy-sign--text">Разработано</p>
+              <div class="footer__htmlacademy-logo">
+                <svg class="footer__htmlacademy-logo">
+                  <use class="footer__htmlacademy-logo" width="40" height="60" xlink:href="img/sprite.svg#htmlacademy" alt="htmlacademy logo"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
