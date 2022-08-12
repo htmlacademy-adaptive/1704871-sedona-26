@@ -1,0 +1,54 @@
+.feedback {
+  .container{
+    .feedback__title{
+      padding-top: 40px;
+      padding-left: 28px;
+      padding-right: 30px;
+      font-family: 'PT Sans Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+      mix-blend-mode: normal;
+    }
+    .feedback__desc{
+      display: block;
+      padding-top: 35px;
+      padding-left: 28px;
+      padding-right: 30px;
+      font-family: 'PT Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #333333;
+      mix-blend-mode: normal;
+      margin-bottom: 32px;
+    }
+    .feedback__btn{
+      display: block;
+      margin: 0 auto;
+      background: #81B3D2;
+      font-family: 'PT Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      mix-blend-mode: normal;
+      padding: 16px 49px;
+      margin-bottom: 49px;
+    }
+    .feedback__img{
+
+
+    }
+  }
+}

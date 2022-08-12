@@ -8,15 +8,15 @@
 # на https://editorconfig.org и в разделе «Download a Plugin»
 # скачайте дополнение для вашего редактора.
 
-root = true
+root = true # Это значит, что файл лежит в корне
 
-[*]
+[*] # Это обозначение говорит, что следующие переменные будут использоваться для всех типов файлов
 charset = utf-8
-end_of_line = lf
-indent_size = 2
-indent_style = space
-insert_final_newline = true
-trim_trailing_whitespace = true
+end_of_line = lf # Это значит, что для обозначения конца строки используется общепринятое выражение 'lf'
+indent_size = 2 # Это значит, что отступ равен четырем пробелам
+indent_style = space # Это значит, что для отступов используются пробелы
+insert_final_newline = true # Это значит, что после сохранения по умолчанию добавляется одна новая строка
+trim_trailing_whitespace = true # Подрезает ненужные пробелы в конце каждой строчки
 
 [*.md]
 trim_trailing_whitespace = false

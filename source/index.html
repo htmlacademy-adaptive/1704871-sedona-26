@@ -5,189 +5,160 @@
     <title>HTML Academy: Седона</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/main.css">
   </head>
+
   <body>
     <div class="wrapper">
+
+      <header class="page-header">
+        <div class="page-header__logo-wrapper">
+          <svg class="page-header__icon-logo" width="185" height="96">
+              <use href="img/sprite.svg#logo185x96"></use>
+          </svg>
+        </div>
+          <nav class="page-header__nav">
+            <button type="button" class="page-header__burger">
+              <span class="page-header__burger-plank"></span>
+              <span class="page-header__burger-plank"></span>
+              <span class="page-header__burger-plank"></span>
+            </button>
+          </nav>
+      </header>
+
       <div class="maincontent">
-        <section class="section">
-          <div class="container hero">
-            <header class="header">
-              <div class="header__icon-logo">
-                <svg> <!-- ЛОГОТИП ГОРОДА -->
-                    <use width="190" height="96" xlink:href="img/sprite.svg#logo" alt="Логотип города"></use>
+
+        <section class="section hero">
+          <div class="container background2">
+            <h1 class="visually-hidden" hidden>СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <svg class="hero__icon-text" width="181" height="214">
+              <use href="img/sprite.svg#hero-text180x214"></use>
+            </svg> <!-- Упаковал три надписи в один спрайт  -->
+            <svg class="hero__icon-sedona" width="280" height="50">
+                <use href="img/sprite.svg#sedona"></use>
+            </svg>
+          </div>
+        </section>
+
+        <section class="section features">
+          <div class="container">
+            <h2 class="features__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+            <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+            <div class="features-block features-block--background1">
+              <h2 class="features-block__title">Настоящий городок</h2>
+              <p class="features-block__number">- №1 -</p>
+              <p class="features-block__desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <!-- ДОБАВИТЬ ФОНОМ КАРТИНКУ ГОРОДА -->
+            </div>
+
+            <div class="features__benefits">
+
+              <div class="benefits__item">
+                <svg class="benefits__item-img" width="39" height="37" >
+                  <use href="img/sprite.svg#icon-house39x37"></use>
                 </svg>
-              </div>
-              <div class="header__hamburger">
-                <a class="header__hamburger">
-                  <span class="header__hamburger-plank"></span>
-                  <span class="header__hamburger-plank"></span>
-                  <span class="header__hamburger-plank"></span>
-                </a>
-              </div>
-            </header>
-            <div class="header__icon-welcome">
-              <svg> <!-- НАДПИСЬ WELCOME -->
-                  <use width="115" height="30" xlink:href="img/sprite.svg#welcome" alt="Welcome"></use>
-              </svg>
-            </div>
-            <div class="header__icon-gorgeous">
-              <svg> <!-- НАДПИСЬ TO THE GORGEOUS -->
-                  <use width="110" height="18" xlink:href="img/sprite.svg#gorgeus" alt="To the gorgeous"></use>
-              </svg>
-            </div>
-            <div class="header__icon-sedona">
-              <svg> <!-- НАДПИСЬ SEDONA -->
-                  <use width="280" height="50" xlink:href="img/sprite.svg#sedona" alt="SEDONA"></use>
-              </svg>
-            </div>
-            <div class="header__icon-because">
-              <svg>   <!-- НАДПИСЬ BECAUSE THE GRAIND CANYON SUCKS!-->
-                  <use width="173" height="46" xlink:href="img/sprite.svg#because" alt="BECAUSE THE GRAIND CANYON SUCKS!"></use>
-              </svg>
-            </div>
-            <div class="header__icon-triangles">
-              <svg class="header__icon-triangles">   <!-- ТРЕУГОЛЬНИЧКИ-->
-                <use class="header__icon-triangles" width="1200" height="57" xlink:href="img/sprite.svg#triangles" alt="beats logo"></use>
-              </svg>
-            </div>
-            <h3 class="header__title-desc">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
-            <p class="header__title-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </div>
-        </section>
-        <section class="section">
-          <div class="container first">
-            <div class="first__icon-white-triangle">
-              <svg class="first__icon-white-triangle">   <!-- <БЕЛЫЕ ТРЕУГОЛЬНИЧКИ>-->
-                  <use class="first__icon-white-triangle" width="768" height="37" xlink:href="img/sprite.svg#white__triangle" alt="beats logo"></use>
-              </svg>
-            </div>
-            <h3 class="first__title">Настоящий городок</h3>
-            <p class="first__title-text">- №1 -</p>
-            <p class="first__title-desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <div class="first__photo-sity"></div>
-            <div class="first__features">
-              <div class="first__feature">
-                <div class="first__feature--img">
-                  <svg>
-                    <use width="39" height="37" xlink:href="img/sprite.svg#icon-house" alt="house"></use>
-                  </svg>
-                </div>
-                <div class="first__feature--text">
-                  <div class="first__feature--title">Жилье</div>
-                  <div class="first__feature--desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+                <div class="benefits__item-column">
+                  <h2 class="benefits__item-title">Жилье</h2>
+                  <p class="benefits__item-desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
               </div>
-              <div class="first__feature">
-                <div class="first__feature--img">
-                  <svg>
-                    <use width="39" height="37" xlink:href="img/sprite.svg#icon-burger" alt="burger"></use>
-                  </svg>
-                </div>
-                <div class="first__feature--text">
-                  <div class="first__feature--title">ЕДА</div>
-                  <div class="first__feature--desc">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
-                </div>
-              </div>
-              <div class="first__feature">
-                <div class="first__feature--img">
-                  <svg>
-                    <use width="39" height="37" xlink:href="img/sprite.svg#icon-gift" alt="gift"></use>
-                  </svg>
-                </div>
-                <div class="first__feature--text">
-                  <div class="first__feature--title">СУВЕНИРЫ</div>
-                  <div class="first__feature--desc">Не только китайского, но и местного производства!</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section">
-          <div class="container second">
-            <h3 class="second__title">ТАМ ЕСТЬ Мост дьявола</h3>
-            <p class="second__title-text">- №2 -</p>
-            <p class="second__title-desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <div class="second__photo-bridge"></div>
-          </div>
-        </section>
-        <section class="section">
-          <div class="container othersec">
-            <div class="othersec__items">
-              <div class="othersec__item">
-                <h3 class="othersec__item--title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-                <p class="othersec__item--title-text">- №3 -</p>
-                <p class="othersec__item--title-desc">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
-              </div>
-              <div class="othersec__item--borderline"></div>
-              <div class="othersec__item">
-                <h3 class="othersec__item--title">КРАСИВАЯ ДОРОГА</h3>
-                <p class="othersec__item--title-text">- №4 -</p>
-                <p class="othersec__item--title-desc">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
-              </div>
-              <div class="othersec__item--borderline"></div>
-              <div class="othersec__item">
-                <h3 class="othersec__item--title">МАЛО ТУРИСТОВ</h3>
-                <p class="othersec__item--title-text">- №5 -</p>
-                <p class="othersec__item--title-desc">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section">
-          <div class="container find-us">
 
-            <div class="find-us__content">
-              <h3 class="find-us__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
-              <p class="find-us__desc">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
-              <button class="find-us__btn">
-                Найти Гостиницу
-              </button>
+              <div class="benefits__item">
+                <svg class="benefits__item-img" width="40" height="35">
+                  <use href="img/sprite.svg#icon-burger40x35"></use>
+                </svg>
+                <div class="benefits__item-column">
+                  <h2 class="benefits__item-title">ЕДА</h2>
+                  <p class="benefits__item-desc">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                </div>
+              </div>
+
+              <div class="benefits__item">
+                <svg class="benefits__item-img" width="32" height="38" >
+                  <use href="img/sprite.svg#icon-gift32x38"></use>
+                </svg>
+                <div class="benefits__item-column">
+                  <h2 class="benefits__item-title">СУВЕНИРЫ</h2>
+                  <p class="benefits__item-desc">Не только китайского, но и местного производства!</p>
+                </div>
+              </div>
             </div>
 
-            <img src="./img/find-us/map-mobile.jpg" alt="map">
+            <div class="features-block features-block--background2">
+              <h2 class="features-block__title">ТАМ ЕСТЬ Мост дьявола</h2>
+              <p class="features-block__number features-block__number--font400">- №2 -</p>
+              <p class="features-block__desc features-block__number--font400">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+
+            <div class="features-block features-block__number--black">
+              <h2 class="features-block__title features-block__number--black">Небольшая площадь</h2>
+              <p class="features-block__number features-block__number--font400 features-block__number--black">- №3 -</p>
+              <p class="features-block__desc features-block__number--font400 features-block__number--black">ВСЕ интересные места находятся очень близко</p>
+            </div>
+
+            <div class="features-block features-block__number--black">
+              <h2 class="features-block__title features-block__number--black">Красивая дорога</h2>
+              <p class="features-block__number features-block__number--font400 features-block__number--black">- №4 -</p>
+              <p class="features-block__desc features-block__number--font400 features-block__number--black">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            </div>
+
+            <div class="features-block features-block__number--black">
+              <h2 class="features-block__title features-block__number--black">Мало туристов</h2>
+              <p class="features-block__number features-block__number--font400 features-block__number--black">- №5 -</p>
+              <p class="features-block__desc features-block__number--font400 features-block__number--black">Большинство едет в гранд каньон и толпится там</p>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section feedback">
+          <div class="container">
+            <h2 class="feedback__title" >ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+            <p class="feedback__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <button type="button" class="feedback__btn">
+              Найти Гостиницу
+            </button>
+            <a class="feedback__img" href="#">
+              <img src="./img/feedback/map-mobile.jpg" alt="map">
+            </a>
           </div>
         </section>
       </div>
+
       <footer class="footer">
-        <div class="container footer">
+        <div class="container">
           <p class="footer__title">#visitSEDONA</p>
-          <div class="footer__social-networks">
-            <div class="footer__social-networks--item">
-              <a class="footer__social-networks--vk" href="#">
-                <div class="footer__social-networks--vk"">
-                  <svg>
-                    <use width="48" height="48" xlink:href="img/sprite.svg#vk" alt="vk logo"></use>
-                  </svg>
-                </div>
+          <ul class="network-list">
+            <li class="network-list__vk">
+              <a href="#">
+                <svg class="network-list__vk-img" width="24" height="14">
+                  <use href="img/sprite.svg#vk24x14"></use>
+                </svg>
               </a>
-            </div>
-            <div class="footer__social-networks--item">
-              <a class="footer__social-networks--tg" href="#">
-                <div class="footer__social-networks--tg">
-                  <svg>
-                    <use width="48" height="48" xlink:href="img/sprite.svg#tg" alt="tg logo"></use>
-                  </svg>
-                </div>
+            </li>
+            <li class="network-list__tg">
+              <a href="#">
+                <svg class="network-list__vk-img" width="21" height="18">
+                  <use href="img/sprite.svg#tg21x18"></use>
+                </svg>
               </a>
-            </div>
-            <div class="footer__social-networks--item">
-              <a class="footer__social-networks--youtube" href="#">
-                <div class="footer__social-networks--youtube">
-                  <svg>
-                    <use width="48" height="48" xlink:href="img/sprite.svg#youtube" alt="youtube logo"></use>
-                  </svg>
-                </div>
+            </li>
+            <li class="network-list__youtube">
+              <a href="#">
+                <svg class="network-list__vk-img" width="20" height="14">
+                  <use href="img/sprite.svg#youtube20x14"></use>
+                </svg>
               </a>
-            </div>
-          </div>
-          <div class="footer__htmlacademy-sign">
-            <p class="footer__htmlacademy-sign--text">Разработано</p>
-            <div class="footer__htmlacademy-logo">
-              <svg class="footer__htmlacademy-logo">
-                <use class="footer__htmlacademy-logo" width="40" height="60" xlink:href="img/sprite.svg#htmlacademy" alt="htmlacademy logo"></use>
+            </li>
+          </ul>
+          <div class="footer__sign">
+            <p class="footer__text">Разработано</p>
+            <a href="https://htmlacademy.ru">
+              <svg class="footer__logo" width="27" height="34">
+                <use href="img/sprite.svg#academylogo27x34"></use>
               </svg>
-            </div>
+            </a>
           </div>
         </div>
       </footer>

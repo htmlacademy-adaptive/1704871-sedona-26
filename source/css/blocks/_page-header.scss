@@ -1,0 +1,33 @@
+.page-header{
+  z-index: 1;
+  width: 100%;
+  height: 56px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  .page-header__logo-wrapper{
+    margin: 0 auto;
+    .page-header__icon-logo{
+      margin-left: 68px;
+    }
+  }
+  .page-header__nav{
+    align-self: flex-end;
+    .page-header__burger{
+      display: flex;
+      flex-direction: column;
+      padding: 17px;
+      padding-right: 20px;
+      height: 56px;
+      width: 68px;
+      justify-content: space-between;
+      background: #FFFFFF;
+      .page-header__burger-plank {
+        background: #81B3D2;
+        height: 4px;
+        width: 23px;
+      }
+    }
+  }
+}
