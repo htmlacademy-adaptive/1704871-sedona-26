@@ -9,25 +9,29 @@
   .page-header__logo-wrapper{
     margin: 0 auto;
     .page-header__icon-logo{
-      margin-left: 68px;
+      margin-left: 61px;
     }
   }
-  .page-header__nav{
-    align-self: flex-end;
-    .page-header__burger{
-      display: flex;
+}
+
+.main-nav {
+  align-self: flex-end;
+  .main-nav__burger {
+    display: flex;
       flex-direction: column;
       padding: 17px;
       padding-right: 20px;
       height: 56px;
-      width: 68px;
+      width: 61px;
       justify-content: space-between;
       background: #FFFFFF;
-      .page-header__burger-plank {
-        background: #81B3D2;
-        height: 4px;
-        width: 23px;
-      }
+    .main-nav__burger-plank {
+      background: #81B3D2;
+      height: 4px;
+      width: 23px;
     }
   }
 }
+
+
+

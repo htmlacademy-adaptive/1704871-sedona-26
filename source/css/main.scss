@@ -2,6 +2,8 @@
 
 @import "layout/normalize.css";
 
+@import "layout/_mixin.scss";
+
 @import "./../fonts/fonts.css";
 
 @import "./blocks/_page-header.scss";
@@ -10,7 +12,7 @@
 
 @import "./blocks/_feedback.scss";
 
-@import "./blocks/_features.scss";
+@import "./blocks/_advantages.scss";
 
 @import "./blocks/_footer.scss";
 
