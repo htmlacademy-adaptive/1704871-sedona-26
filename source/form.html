@@ -5,28 +5,56 @@
     <title>HTML Academy: Седона</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <svg class="page-header__icon-logo" width="185" height="96">
-            <use href="img/sprite.svg#logo185x96"></use>
-        </svg>
-        <nav class="page-header__nav">
-          <button type="button" class="page-header__burger">
-            <span class="page-header__burger-plank"></span>
-            <span class="page-header__burger-plank"></span>
-            <span class="page-header__burger-plank"></span>
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="#">
+            <svg class="page-header__icon-logo" width="185" height="96">
+                <use href="img/sprite.svg#logo185x96"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button type="button" class="main-nav__burger">
+            <span class="visually-hidden" hidden>Открыть меню</span>
+            <span class="main-nav__burger-plank"></span>
+            <span class="main-nav__burger-plank"></span>
+            <span class="main-nav__burger-plank"></span>
           </button>
+          <ul class="nav-list">
+            <li class="nav-list__item nav-list__item--active" hidden>
+              <a href="#">
+                ГЛАВНАЯ
+              </a>
+            </li>
+            <li class="nav-list__item nav-list__item--active" hidden>
+              <a href="#">
+                ФОТО И ВИДЕО
+              </a>
+            </li>
+            <li class="nav-list__item nav-list__item--active" hidden>
+              <a href="#">
+                ФОРМА ОТЗЫВА
+              </a>
+            </li>
+            <li class="nav-list__item nav-list__item--active" hidden>
+              <a href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
         </nav>
       </header>
-      <div class="maincontent">
 
-        <section class="section hero">
+      <main class="maincontent">
+
+        <section class="section hero short">
           <div class="container">
             <h1 class="visually-hidden" hidden>СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
-              <svg width="280" height="50"> <!-- НАДПИСЬ SEDONA -->
+              <svg class="hero__icon-sedona" width="280" height="50"> <!-- НАДПИСЬ SEDONA -->
                   <use href="img/sprite.svg#sedona"></use>
               </svg>
           </div>
@@ -34,86 +62,88 @@
 
         <section class="section form">
           <div class="container">
-            <h2 class="features__title">Оставьте свой отзыв</h2>
-            <p class="features__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <h2 class="form__title">Оставьте свой отзыв</h2>
+            <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
-            <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-              <h2 class="form__title">Представьтесь:</h2>
+            <form class="user-opinion" action="https://echo.htmlacademy.ru/" method="post">
 
               <fieldset class="person-name">
+                <h2 class="person-name__title">Представьтесь:</h2>
                 <label class="person-name__block">
-                  ИМЯ*:<input class="form__input"  name="name" type="text">
+                  ИМЯ*:<br><input class="form-input"  name="name" type="text">
                 </label>
                 <label class="person-name__block">
-                  ФАМИЛИЯ*:<input class="form__input" name="surname" type="text">
+                  ФАМИЛИЯ*:<input class="form-input" name="surname" type="text">
                 </label>
                 <label class="person-name__block">
-                  ОТЧЕСТВО*:<input class="form__input" name="second-name" type="text">
+                  ОТЧЕСТВО*:<input class="form-input" name="second-name" type="text">
                 </label>
               </fieldset>
 
-              <h2 class="form__title-desc">контактная информация:</h2>
 
               <fieldset class="person-contacts">
+                <h2 class="person-contacts-title">контактная информация:</h2>
                 <label class="person-contacts__block">
-                  КОНТАКТНЫЙ ТЕЛЕФОН*:<input class="form__input" name="phone" placeholder="Введите телефон" type="tel">
+                  КОНТАКТНЫЙ ТЕЛЕФОН*:<input class="form-input" name="phone" placeholder="Введите телефон" type="tel">
                 </label>
                 <label class="person-contacts__block">
-                  ЭЛЕКТРОННАЯ ПОЧТА*:<input class="form__input" name="email" placeholder="Введите e-mail" type="tel">
+                  ЭЛЕКТРОННАЯ ПОЧТА*:<input class="form-input" name="email" placeholder="Введите e-mail" type="tel">
                 </label>
               </fieldset>
 
-              <h2 class="form__title">ваше общее впечатление:</h2>
 
               <fieldset class="person-impression">
+                <h2 class="person-impression__title">ваше общее впечатление:</h2>
                 <label class="person-impression__radio">
-                  <input class="radio__elem" type="radio" name="opinion" value="positive"> Скорее положительное
+                  <input class="radio-elem" type="radio" name="opinion" value="positive"> Скорее положительное
                 </label>
                 <label class="person-impression__radio">
-                  <input class="radio__elem" type="radio" name="opinion" value="negative"> Скорее отрицательное
+                  <input class="radio-elem" type="radio" name="opinion" value="negative"> Скорее отрицательное
                 </label>
                 <label class="person-impression__radio">
-                  <input class="radio__elem" type="radio" name="opinion" value="dontknow"> Затрудняюсь ответить
+                  <input class="radio-elem" type="radio" name="opinion" value="dontknow"> Затрудняюсь ответить
                 </label>
               </fieldset>
 
-              <h2 class="form__title-desc">посещенные достопримечательности:</h2>
 
               <fieldset class="person-visited">
+                <h2 class="person-visited__title">посещенные достопримечательности:</h2>
                 <label class="person-visited__checkbox">
-                  <input class="radio__elem" type="checkbox" name="visited" value="devil__bridge"> Мост Дьявола
+                  <input class="checkbox-elem" type="checkbox" name="visited" value="devil__bridge"> Мост Дьявола
                 </label>
                 <label class="person-visited__checkbox">
-                  <input class="radio__elem" type="checkbox" name="visited" value="mountain-bell"> Гора-Колокол
+                  <input class="checkbox-elem" type="checkbox" name="visited" value="mountain-bell"> Гора-Колокол
                 </label>
                 <label class="person-visited__checkbox">
-                  <input class="radio__elem" type="checkbox" name="visited" value="slide-park"> Слайд-парк
+                  <input class="checkbox-elem" type="checkbox" name="visited" value="slide-park"> Слайд-парк
                 </label>
                 <label class="person-visited__checkbox">
-                  <input class="radio__elem" type="checkbox" name="visited" value="red-mountains"> Красные скалы
+                  <input class="checkbox-elem" type="checkbox" name="visited" value="red-mountains"> Красные скалы
                 </label>
               </fieldset>
 
-              <h2 class="form__title-desc">опишите свои эмоции:</h2>
 
               <fieldset class="person-feedback">
-                <label class="person-feedback__textarea">
-                  <textarea placeholder="Опишите подробно все свои восторги" name="feedback" cols="30" rows="10"></textarea>
+                <h2 class="person-feedback__title">опишите свои эмоции:</h2>
+                <label class="person-feedback__label">
+                  <textarea class="person-feedback__textarea" placeholder="Опишите подробно все свои восторги" name="feedback" cols="30" rows="10"></textarea>
                 </label>
               </fieldset>
 
-              <label class="form__submit">
-                <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+              <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+              <p class="form__submit">
                 * - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
-              </label>
+              </p>
             </form>
           </div>
         </section>
-      </div>
+
+      </main>
+
       <footer class="footer">
         <div class="container">
           <p class="footer__title">#visitSEDONA</p>
-          <ul class="footer__network-list">
+          <ul class="network-list">
             <li class="network-list__vk">
               <a href="#">
                 <svg class="network-list__vk-img" width="24" height="14">

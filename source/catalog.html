@@ -10,18 +10,47 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <svg class="page-header__icon-logo" width="185" height="96">
-            <use href="img/sprite.svg#logo185x96"></use>
-        </svg>
-        <nav class="page-header__nav">
-          <button type="button" class="page-header__burger">
-            <span class="page-header__burger-plank"></span>
-            <span class="page-header__burger-plank"></span>
-            <span class="page-header__burger-plank"></span>
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="#">
+            <svg class="page-header__icon-logo" width="185" height="96">
+                <use href="img/sprite.svg#logo185x96"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button type="button" class="main-nav__burger">
+            <span class="visually-hidden" hidden>Открыть меню</span>
+            <span class="main-nav__burger-plank"></span>
+            <span class="main-nav__burger-plank"></span>
+            <span class="main-nav__burger-plank"></span>
           </button>
+          <ul class="nav-list">
+            <li class="nav-list__item nav-list__item--active">
+              <a href="#">
+                ГЛАВНАЯ
+              </a>
+            </li>
+            <li class="nav-list__item nav-list__item--active">
+              <a href="#">
+                ФОТО И ВИДЕО
+              </a>
+            </li>
+            <li class="nav-list__item nav-list__item--active">
+              <a href="#">
+                ФОРМА ОТЗЫВА
+              </a>
+            </li>
+            <li class="nav-list__item nav-list__item--active">
+              <a href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
         </nav>
       </header>
-      <div class="maincontent">
+
+      <main class="maincontent">
+
         <section class="section hero">
           <div class="container">
             <h1 class="visually-hidden" hidden>СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -30,9 +59,11 @@
             </svg>
           </div>
         </section>
+
         <section class="section gallery">
           <div class="container">
-            <div class="gallery__item">
+
+            <article class="gallery__item">
               <a class="gallery__img" href="#">
                 <img src="./img/gallery/photo1-mobile.jpg" alt="photo">
               </a>
@@ -42,8 +73,9 @@
                 <button class="gallery__like-button" type="button"></button>
                 <p class="gallery__number-likes">1350</p>
               </div>
-            </div>
-            <div class="gallery__item">
+            </article>
+
+            <article class="gallery__item">
               <a class="gallery__img" href="#">
                 <img src="./img/gallery/photo2-mobile.jpg" alt="photo">
               </a>
@@ -53,8 +85,9 @@
                 <button class="gallery__like-button" type="button"></button>
                 <p class="gallery__number-likes">143</p>
               </div>
-            </div>
-            <div class="gallery__item">
+            </article>
+
+            <article class="gallery__item">
               <a class="gallery__img" href="#">
                 <img src="./img/gallery/photo3-mobile.jpg" alt="photo">
               </a>
@@ -64,8 +97,9 @@
                 <button class="gallery__like-button" type="button"></button>
                 <p class="gallery__number-likes">96</p>
               </div>
-            </div>
-            <div class="gallery__item">
+            </article>
+
+            <article class="gallery__item">
               <a class="gallery__img" href="#">
                 <img src="./img/gallery/photo4-desktop.jpg" alt="photo">
               </a>
@@ -75,9 +109,10 @@
                 <button class="gallery__like-button" type="button"></button>
                 <p class="gallery__number-likes">96</p>
               </div>
-            </div>
+            </article>
           </div>
         </section>
+
         <section class="section feedback">
           <div class="container">
             <h2 class="feedback__title">все еще сомневаетесь?</h2>
@@ -85,11 +120,11 @@
             <!-- ВСТАВИТЬ ВИДЕОПРЕЗЕНТАЦИЮ -->
           </div>
         </section>
-      </div>
+      </main>
       <footer class="footer">
         <div class="container">
           <p class="footer__title">#visitSEDONA</p>
-          <ul class="footer__network-list">
+          <ul class="network-list">
             <li class="network-list__vk">
               <a href="#">
                 <svg class="network-list__vk-img" width="24" height="14">
