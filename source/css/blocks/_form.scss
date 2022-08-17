@@ -1,16 +1,6 @@
-.short {
-  height: 158px;
-  background: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
-  background-position: center 101px, center -288px;
-  background-repeat: no-repeat, no-repeat;
-}
-
-.short .container .hero__icon-sedona {
-  margin: -39px auto;
-}
 
 .form__title {
-  padding-top: 40px;
+  padding-top: 37px;
   padding-left: 28px;
   padding-right: 30px;
   font-family: 'PT Sans Bold';
@@ -25,9 +15,11 @@
 }
 
 .form__text{
-  padding-top: 35px;
-  padding-left: 28px;
-  padding-right: 30px;
+  min-width: 282px;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-right: 18px;
+  margin-bottom: 26px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -45,9 +37,10 @@
 }
 
 .person-name__title {
-  padding-top: 40px;
+  padding-top: 19px;
   padding-left: 28px;
   padding-right: 30px;
+  margin-bottom: 20px;
   font-family: 'PT Sans Bold';
   font-style: normal;
   font-weight: 700;
@@ -60,7 +53,7 @@
 }
 
 .person-name__block {
-  margin-left: 17px;
+  margin-left: 24px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -200,4 +193,23 @@ fieldset {
   line-height: 26px;
   color: rgba(0, 0, 0, 1);
   mix-blend-mode: normal;
+}
+
+.form-submit {
+  display: block;
+  margin: 0 18px;
+  background: #81B3D2;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 49px;
+  border: none;
 }

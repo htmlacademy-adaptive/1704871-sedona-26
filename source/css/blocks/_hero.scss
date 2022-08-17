@@ -34,3 +34,19 @@
     }
   }
 }
+
+.hero__icon-sedona--form {
+
+}
+
+.short {
+  height: 158px;
+  background: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
+  background-position: center 101px, center -231px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1200px 57px, 901px 389px;
+}
+
+.short .container .hero__icon-sedona {
+  margin: -62px auto;
+}
