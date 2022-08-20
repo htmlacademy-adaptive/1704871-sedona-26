@@ -1,0 +1,45 @@
+.feedback {
+  min-height: 672px;
+  background-color: $white;
+  padding: 38px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback__title{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.feedback__desc{
+  max-width: 268px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $gray;
+}
+
+.feedback__link{
+  display: inline-block;
+  // margin: 0 auto;
+  background: $blue;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $white;
+  padding: 16px 49px;
+  align-self: center;
+}
+
+.feedback__img{
+
+}

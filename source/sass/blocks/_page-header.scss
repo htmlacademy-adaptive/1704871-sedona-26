@@ -1,0 +1,33 @@
+.page-header {
+  width: 100%;
+  height: 56px;
+  background: $white;
+  display: flex;
+
+}
+
+.page-header__logo {
+  margin: 0 auto;
+  transform: translateX(25px);
+}
+
+.main-nav {
+
+}
+
+.main-nav__burger {
+  display: flex;
+  flex-direction: column;
+  padding: 17px;
+  padding-right: 20px;
+  height: 56px;
+  width: 61px;
+  justify-content: space-between;
+  background: #FFFFFF;
+}
+
+.main-nav__burger-plank {
+  background: #81B3D2;
+  height: 4px;
+  width: 23px;
+  }

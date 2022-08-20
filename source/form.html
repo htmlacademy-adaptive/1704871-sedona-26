@@ -10,37 +10,35 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <div class="page-header__logo-wrapper">
           <a class="page-header__logo" href="#">
             <svg class="page-header__icon-logo" width="185" height="96">
               <use href="img/sprite.svg#logo185x96"></use>
-          </svg>
+            </svg>
           </a>
-        </div>
         <nav class="main-nav">
           <button type="button" class="main-nav__burger">
-            <span class="visually-hidden" hidden>Открыть меню</span>
+            <span class="visually-hidden">Открыть меню</span>
             <span class="main-nav__burger-plank"></span>
             <span class="main-nav__burger-plank"></span>
             <span class="main-nav__burger-plank"></span>
           </button>
           <ul class="nav-list">
-            <li class="nav-list__item nav-list__item--active" hidden>
+            <li class="nav-list__item">
               <a href="#">
                 ГЛАВНАЯ
               </a>
             </li>
-            <li class="nav-list__item nav-list__item--active" hidden>
+            <li class="nav-list__item">
               <a href="#">
                 ФОТО И ВИДЕО
               </a>
             </li>
-            <li class="nav-list__item nav-list__item--active" hidden>
+            <li class="nav-list__item">
               <a href="#">
                 ФОРМА ОТЗЫВА
               </a>
             </li>
-            <li class="nav-list__item nav-list__item--active" hidden>
+            <li class="nav-list__item">
               <a href="#">
                 HTML ACADEMY
               </a>
@@ -51,9 +49,9 @@
 
       <main class="maincontent">
 
-        <section class="section hero short">
+        <section class="section hero--short">
           <div class="container">
-            <h1 class="visually-hidden" hidden>СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <h1 class="visually-hidden">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
             <svg class="hero__icon-sedona hero__icon-sedona--form" width="235" height="80">
               <use href="img/sprite.svg#sedona"></use>
             </svg>
@@ -67,66 +65,67 @@
 
             <form class="user-opinion" action="https://echo.htmlacademy.ru/" method="post">
 
-              <fieldset class="person-name">
-                <h2 class="person-name__title">Представьтесь:</h2>
-                <label class="person-name__block">
+              <fieldset class="fieldset">
+                <h2 class="fieldset__title">Представьтесь:</h2>
+                <label class="fieldset__input">
                   ИМЯ*:<br><input class="form-input"  name="name" type="text">
                 </label>
-                <label class="person-name__block">
+                <label class="fieldset__input">
                   ФАМИЛИЯ*:<input class="form-input" name="surname" type="text">
                 </label>
-                <label class="person-name__block">
+                <label class="fieldset__input">
                   ОТЧЕСТВО*:<input class="form-input" name="second-name" type="text">
                 </label>
               </fieldset>
 
 
-              <fieldset class="person-contacts">
-                <h2 class="person-contacts-title">контактная информация:</h2>
-                <label class="person-contacts__block">
+              <fieldset class="fieldset">
+                <h2 class="fieldset-title">контактная информация:</h2>
+                <label class="fieldset__input">
                   КОНТАКТНЫЙ ТЕЛЕФОН*:<input class="form-input" name="phone" placeholder="Введите телефон" type="tel">
                 </label>
-                <label class="person-contacts__block">
-                  ЭЛЕКТРОННАЯ ПОЧТА*:<input class="form-input" name="email" placeholder="Введите e-mail" type="tel">
+                <label class="fieldset__input">
+                  ЭЛЕКТРОННАЯ ПОЧТА*:<input class="form-input" name="email" placeholder="Введите e-mail" type="email">
                 </label>
               </fieldset>
 
 
-              <fieldset class="person-impression">
-                <h2 class="person-impression__title">ваше общее впечатление:</h2>
-                <label class="person-impression__radio">
+              <fieldset class="fieldset">
+                <h2 class="fieldset__title">ваше общее впечатление:</h2>
+                <label class="fieldset__radio">
                   <input class="radio-elem" type="radio" name="opinion" value="positive"> Скорее положительное
                 </label>
-                <label class="person-impression__radio">
+                <label class="fieldset__radio">
                   <input class="radio-elem" type="radio" name="opinion" value="negative"> Скорее отрицательное
                 </label>
-                <label class="person-impression__radio">
+                <label class="fieldset__radio">
                   <input class="radio-elem" type="radio" name="opinion" value="dontknow"> Затрудняюсь ответить
                 </label>
               </fieldset>
 
 
-              <fieldset class="person-visited">
-                <h2 class="person-visited__title">посещенные достопримечательности:</h2>
-                <label class="person-visited__checkbox">
+              <fieldset class="fieldset">
+                <h2 class="fieldset__title">посещенные достопримечательности:</h2>
+                <label class="fieldset__checkbox">
                   <input class="checkbox-elem" type="checkbox" name="visited" value="devil__bridge"> Мост Дьявола
                 </label>
-                <label class="person-visited__checkbox">
+                <label class="fieldset__checkbox">
                   <input class="checkbox-elem" type="checkbox" name="visited" value="mountain-bell"> Гора-Колокол
                 </label>
-                <label class="person-visited__checkbox">
+                <label class="fieldset__checkbox">
                   <input class="checkbox-elem" type="checkbox" name="visited" value="slide-park"> Слайд-парк
                 </label>
-                <label class="person-visited__checkbox">
+                <label class="fieldset__checkbox">
                   <input class="checkbox-elem" type="checkbox" name="visited" value="red-mountains"> Красные скалы
                 </label>
               </fieldset>
 
 
-              <fieldset class="person-feedback">
-                <h2 class="person-feedback__title">опишите свои эмоции:</h2>
-                <label class="person-feedback__label">
-                  <textarea class="person-feedback__textarea" placeholder="Опишите подробно все свои восторги" name="feedback" cols="30" rows="10"></textarea>
+              <fieldset class="fieldset">
+                <h2 class="fieldset__title">опишите свои эмоции:</h2>
+                <label class="fieldset__label">
+                  <p class="visually-hidden">Опишите подробно все свои восторги</p>
+                  <textarea class="fieldset__textarea" placeholder="Опишите подробно все свои восторги" name="feedback" cols="30" rows="10"></textarea>
                 </label>
               </fieldset>
 

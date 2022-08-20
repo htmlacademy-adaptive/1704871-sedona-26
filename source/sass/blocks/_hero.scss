@@ -1,0 +1,43 @@
+.hero {
+  display: block;
+  height: 389px;
+  background: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
+  background-position: center 332px, center -1px;
+  background-size: 1200px 57px, 901px 389px;
+  background-repeat: no-repeat, no-repeat;
+  padding-top: 94px;
+}
+
+.hero__icon-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__icon-sedona{
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-144px);
+}
+
+
+//   .background3{
+
+//     background: url("../img/features/blue__triantgles.svg");
+//     background-position: center 0px;
+//     background-repeat: no-repeat;
+
+// }
+
+// }
+
+// .short {
+//   height: 158px;
+//   background: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
+//   background-position: center 101px, center -231px;
+//   background-repeat: no-repeat, no-repeat;
+//   background-size: 1200px 57px, 901px 389px;
+// }
+
+// .short .container .hero__icon-sedona {
+//   margin: -62px auto;
+// }
