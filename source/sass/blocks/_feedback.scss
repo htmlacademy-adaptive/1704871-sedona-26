@@ -1,11 +1,8 @@
 .feedback {
-  min-height: 672px;
   background-color: $white;
-  padding: 38px 0;
+  padding: 38px 0 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .feedback__title{
@@ -15,10 +12,16 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .feedback__desc{
-  max-width: 268px;
+  margin: 0 auto;
+  padding-top: 25px;
+  min-width: 268px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -29,17 +32,14 @@
 
 .feedback__link{
   display: inline-block;
-  // margin: 0 auto;
+  margin: 32px 18px 49px;
   background: $blue;
+  font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
   color: $white;
-  padding: 16px 49px;
-  align-self: center;
-}
-
-.feedback__img{
-
+  padding: 16px 37px;
 }

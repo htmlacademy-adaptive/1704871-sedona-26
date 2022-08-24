@@ -1,5 +1,9 @@
 /* advantages */
 
+.advantages{
+  padding-top: 32px;
+}
+
 .advantages__title {
   font-weight: 700;
   font-size: 18px;
@@ -7,8 +11,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
-  margin: 32px auto;
-  max-width: 259px;
+  margin: 0 auto;
+  min-width: 303px;
 }
 
 .advantages__text {
@@ -18,72 +22,48 @@
   text-align: center;
   text-transform: uppercase;
   color: $gray;
-  max-width: 259px;
-  margin: 10px auto;
+  min-width: 303px;
+  margin: 35px 0 auto;
 }
 
-.advantages-list {
-  margin-top:17px;
-  display: flex;
-  flex-direction: column;
-}
-
-.advantages-list--backgrounds {
-  .advantages-list__item:first-child {
-  background-image:
-  url("./../../img/features/white__triantgles.svg");
+.advantages-list__item--opt1 {
+  margin-top: 16px;
+  padding-top: 69px;
+  padding-bottom: 300px;
+  background-image: url("./../img/features/white__triantgles.svg"), url("./../img/features/photo-city.jpg");
   background-repeat: no-repeat;
-  background-position: center 0px;
-  background-size: 768px 37px;
-  }
+  background-position: center top, center bottom;
+  background-size: 768px 37px, 520px 260px;
+  background-color: $blue;
+}
 
+.advantages-list__item--opt2 {
+  padding-top: 39px;
+  padding-bottom: 295px;
   background-image:
-  url("./../../img/features/photo-city.jpg"),
-  url("./../../img/features/devils__bridge.png");
+  url("./../img/features/devils__bridge.png");
   background-repeat: no-repeat;
-  background-position:center 211px, center 1239px;
-  background-size: 520px 260px, 520px 260px;
+  background-position: center bottom;
+  background-size: 520px 260px;
+  background-color: $blue;
 }
 
-.advantages-list__item--opt1{
-  background-color: $blue;
-  height: 211px;
-  padding-bottom: 40px;
-  padding-top: 54px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-}
-.advantages-list__item--opt2{
-  background-color: $blue;
-  height: 191px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 35px 0;
-}
 .advantages-list__item--opt3{
   background-color: $lightgray;
-  background-image: url("./../../img/features/line.svg");
+  background-image: url("./../img/features/line.svg");
   background-repeat: repeat-x;
-  height: 168px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 24px 0;
+  padding: 26px 0;
   .advantages-list__title{
     color: $black;
   }
-  .advantages-list__number{
-    color: $gray;
-  }
-  .advantages-list__desc{
+  .advantages-list__number,
+  .advantages-list__desc {
     color: $gray;
   }
 }
 
 .advantages-list__title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -93,7 +73,7 @@
 }
 
 .advantages-list__number {
-  padding-top: 20px;
+  margin: 11px 0 auto;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -103,9 +83,8 @@
 }
 
 .advantages-list__desc {
-  padding-top: 20px;
-  margin: 0 auto;
-  max-width: 282px;
+  margin: 17px 0 auto;
+  max-width: 319px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -114,28 +93,28 @@
   color: $white;
 }
 
-/* benefits */
-
-.benefits {
-  margin-top: 260px;
-  background: $white;
+.benefits-item {
+  padding-left: 15px;
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 51px 256px;
+  grid-template-rows: 38px 1fr;
 }
 
-.benefits-item {
-  height: 136px;
-  display: grid;
-  grid-template-columns: 64px 256px;
-  grid-template-rows: 73px 1fr;
+.benefits-item:last-child {
+  padding-bottom: 52px;
 }
 
 .benefits-item__img {
   grid-column-start: 1;
   grid-row-start: 1;
-  margin-top: 24px;
-  margin-left: 18px;
 }
 
 .benefits-item__title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   grid-column-start: 2;
   grid-row-start: 1;
   font-weight: 700;
@@ -143,19 +122,20 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $black;
-  padding-top: 31px;
+  padding-top: 7px;
 }
 
 .benefits-item__desc {
-  width: 200px;
+  margin: 0;
+  padding: 0;
   grid-column-start: 2;
   grid-row-start: 2;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: $gray;
+  padding-top: 16px;
+  min-width: 232px;
 }
-
-
-

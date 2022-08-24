@@ -52,7 +52,7 @@
         <section class="section hero--short">
           <div class="container">
             <h1 class="visually-hidden">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
-            <svg class="hero__icon-sedona hero__icon-sedona--form" width="235" height="80">
+            <svg class="hero__icon-sedona hero__icon-sedona--form" width="229" height="39">
               <use href="img/sprite.svg#sedona"></use>
             </svg>
           </div>
@@ -84,10 +84,10 @@
               <fieldset class="fieldset">
                 <h2 class="fieldset__title">контактная информация:</h2>
                 <label class="fieldset__input">
-                  КОНТАКТНЫЙ ТЕЛЕФОН*:<input class="form-input" name="phone" placeholder="Введите телефон" type="tel">
+                  КОНТАКТНЫЙ ТЕЛЕФОН*:<input class="form-input form-input--phone" name="phone" placeholder="Введите телефон" type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                 </label>
                 <label class="fieldset__input">
-                  ЭЛЕКТРОННАЯ ПОЧТА*:<input class="form-input" name="email" placeholder="Введите e-mail" type="email">
+                  ЭЛЕКТРОННАЯ ПОЧТА*:<input class="form-input form-input--email" name="email" placeholder="Введите e-mail" type="email">
                 </label>
               </fieldset>
 
@@ -158,25 +158,26 @@
 
       <div class="container">
         <footer class="footer">
+          <div class="container">
             <p class="footer__title">#visitSEDONA</p>
             <ul class="network-list">
               <li class="network-list__vk">
-                <a href="#">
+                <a class="network-list__vk-link" href="#">
                   <svg class="network-list__vk-img" width="24" height="14">
                     <use href="img/sprite.svg#vk24x14"></use>
                   </svg>
                 </a>
               </li>
               <li class="network-list__tg">
-                <a href="#">
-                  <svg class="network-list__vk-img" width="21" height="18">
+                <a class="network-list__tg-link" href="#">
+                  <svg class="network-list__tg-img" width="22" height="18">
                     <use href="img/sprite.svg#tg21x18"></use>
                   </svg>
                 </a>
               </li>
               <li class="network-list__youtube">
-                <a href="#">
-                  <svg class="network-list__vk-img" width="20" height="14">
+                <a class="network-list__youtube-link" href="#">
+                  <svg class="network-list__youtube-img" width="20" height="14">
                     <use href="img/sprite.svg#youtube20x14"></use>
                   </svg>
                 </a>
@@ -184,13 +185,14 @@
             </ul>
             <div class="footer__sign">
               <p class="footer__text">Разработано</p>
-              <a href="https://htmlacademy.ru">
-                <svg class="footer__logo" width="27" height="34">
+              <a class="footer__logo" href="https://htmlacademy.ru">
+                <svg class="footer__logo-svg" width="27" height="34">
                   <use href="img/sprite.svg#academylogo27x34"></use>
                 </svg>
               </a>
             </div>
-          </footer>
+          </div>
+        </footer>
       </div>
     </div>
   </body>

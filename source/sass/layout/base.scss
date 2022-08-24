@@ -1,5 +1,5 @@
 .page {
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, Sans-serif;
 }
 
 .container {
@@ -48,40 +48,13 @@ body {
 	margin: 0;
 }
 
-button {
-	border: 0;
-	cursor: pointer;
-}
-
 * {
 	box-sizing: border-box;
 }
 
-ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-h1,
-h2,
-h2,
-h4,
-h5,
-h6 {
-	/* font-weight: normal; */
-	margin: 0;
-}
-
-p {
-	margin: 0;
-	padding: 0;
-}
-
 a {
-	color: inherit;
-	cursor: pointer;
 	text-decoration: none;
+  cursor: pointer;
 }
 
 input[type="text"] {
@@ -89,4 +62,11 @@ input[type="text"] {
 	font-size: inherit;
 	line-height: inherit;
 
+}
+
+ul, li {
+  list-style-type: none;
+  margin-block-start:0;
+  margin-block-end:0;
+  padding-inline-start: 0px;
 }
