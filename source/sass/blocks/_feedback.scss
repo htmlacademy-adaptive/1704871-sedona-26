@@ -5,6 +5,9 @@
   flex-direction: column;
 }
 
+/* ВОПРОС: После удаления из base.scss правил по поводу a и h1,h1 и т.д.
+  начали появляется дефолтные margin-block-start и т.п. Что с этим делать? */
+
 .feedback__title{
   font-weight: 700;
   font-size: 21px;
