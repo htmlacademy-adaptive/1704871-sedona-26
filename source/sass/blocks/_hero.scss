@@ -11,10 +11,20 @@
   url("./../img/hero/background.jpg");
   background-position: center center, center bottom, center -1px;
   background-size: 180px 214px, 1200px 57px, 901px 389px;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-repeat: no-repeat;
   padding-top: 173px;
   padding-bottom: 167px;
+  @include phones {
+
+  }
+  @include tablets {
+    background-size: 180px 214px, 1200px 57px, 100vw 389px;
+  }
+  @include desktops {
+    background-size: 180px 214px, 1200px 57px, 1280px 389px;
+  }
 }
+
 
 .hero--short{
   display: block;

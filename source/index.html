@@ -12,41 +12,48 @@
     <div class="wrapper">
 
       <header class="page-header">
-        <a class="page-header__logo" href="#">
-          <svg class="page-header__icon-logo" width="185" height="96">
-              <use href="img/sprite.svg#logo185x96"></use>
-          </svg>
-        </a>
-        <nav class="main-nav">
-          <ul class="nav-list visually-hidden">
-            <li class="nav-list__item nav-list__item--active">
-              <a href="#">
-                ГЛАВНАЯ
-              </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">
-                ФОТО И ВИДЕО
-              </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">
-                ФОРМА ОТЗЫВА
-              </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">
-                HTML ACADEMY
-              </a>
-            </li>
-          </ul>
-          <a type="button" class="main-nav__burger">
-            <span class="visually-hidden">Открыть меню</span>
-            <span class="main-nav__burger-plank"></span>
-            <span class="main-nav__burger-plank"></span>
-            <span class="main-nav__burger-plank"></span>
+        <div class="container">
+
+          <a class="page-header__logo" href="#">
+            <svg class="page-header__icon-logo" width="185" height="96">
+                <use href="img/sprite.svg#logo185x96"></use>
+            </svg>
           </a>
-        </nav>
+
+          <nav class="main-nav">
+
+            <ul class="nav-list visually-hidden-phones">
+              <li class="nav-list__item nav-list__item--active">
+                <a href="#">
+                  ГЛАВНАЯ
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#">
+                  ФОТО И ВИДЕО
+                </a>
+              </li>
+              <li class="nav-list__item"></li>
+              <li class="nav-list__item">
+                <a href="#">
+                  ФОРМА ОТЗЫВА
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#">
+                  HTML ACADEMY
+                </a>
+              </li>
+            </ul>
+
+            <a type="button" class="main-nav__burger">
+              <span class="visually-hidden">Открыть меню</span>
+              <span class="main-nav__burger-plank"></span>
+              <span class="main-nav__burger-plank"></span>
+              <span class="main-nav__burger-plank"></span>
+            </a>
+          </nav>
+        </div>
       </header>
 
       <main class="maincontent">
@@ -78,23 +85,29 @@
 
               <ul class="benefits">
                 <li class="benefits-item">
-                  <svg class="benefits-item__img" width="39" height="37">
-                    <use href="img/sprite.svg#icon-house39x37"></use>
-                  </svg>
+                  <picture class="benefits-item__img">
+                    <source srcset="img/features/icon-house75x72.svg" media="(min-width: 768px)" width="75" height="72">
+                    <img src="img/features/icon-house39x37.svg" alt="Дом" width="39" height="37">
+                   </picture>
                   <h2 class="benefits-item__title">Жилье</h2>
                   <p class="benefits-item__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="benefits-item">
-                  <svg class="benefits-item__img" width="40" height="35">
-                    <use href="img/sprite.svg#icon-burger40x35"></use>
-                  </svg>
+                  <picture class="benefits-item__img">
+                    <source srcset="img/features/icon-burger76x68.svg" media="(min-width: 768px)" width="76" height="68">
+                    <img src="img/features/icon-burger40x35.svg" alt="Бургер" width="40" height="35">
+                   </picture>
                   <h2 class="benefits-item__title">ЕДА</h2>
                   <p class="benefits-item__desc">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
                 </li>
                 <li class="benefits-item">
-                  <svg class="benefits-item__img" width="32" height="38" >
+                  <picture class="benefits-item__img">
+                    <source srcset="img/features/icon-gift64x75.svg" media="(min-width: 768px)" width="64" height="75">
+                    <img src="img/features/icon-gift32x38.svg" alt="Сувенир" width="32" height="38">
+                   </picture>
+                  <!-- <svg class="benefits-item__img" width="32" height="38" >
                     <use href="img/sprite.svg#icon-gift32x38"></use>
-                  </svg>
+                  </svg> -->
                   <h2 class="benefits-item__title">СУВЕНИРЫ</h2>
                   <p class="benefits-item__desc">Не только китайского, но и местного производства!</p>
                 </li>
@@ -107,21 +120,39 @@
               </article>
 
               <article class="advantages-list__item advantages-list__item--opt3">
-                <h2 class="advantages-list__title">Небольшая площадь</h2>
-                <p class="advantages-list__number">&mdash; №3 &mdash;</p>
-                <p class="advantages-list__desc">ВСЕ интересные места находятся очень близко</p>
-              </article>
-
-              <article class="advantages-list__item advantages-list__item--opt3">
-                <h2 class="advantages-list__title">Красивая дорога</h2>
-                <p class="advantages-list__number">&mdash; №4 &mdash;</p>
-                <p class="advantages-list__desc">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-              </article>
-
-              <article class="advantages-list__item advantages-list__item--opt3">
-                <h2 class="advantages-list__title">Мало туристов</h2>
-                <p class="advantages-list__number">&mdash; №5 &mdash;</p>
-                <p class="advantages-list__desc">Большинство едет в гранд каньон и толпится там</p>
+                <ul class="advantages-list__art3">
+                  <li>
+                    <h2 class="advantages-list__title">Небольшая площадь</h2>
+                  </li>
+                  <li>
+                    <p class="advantages-list__number">&mdash; №3 &mdash;</p>
+                  </li>
+                  <li>
+                    <p class="advantages-list__desc">ВСЕ интересные места находятся очень близко</p>
+                  </li>
+                </ul>
+                <ul class="advantages-list__art3">
+                  <li>
+                    <h2 class="advantages-list__title">Красивая дорога</h2>
+                  </li>
+                  <li>
+                    <p class="advantages-list__number">&mdash; №4 &mdash;</p>
+                  </li>
+                  <li>
+                    <p class="advantages-list__desc">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+                  </li>
+                </ul>
+                <ul class="advantages-list__art3">
+                  <li>
+                    <h2 class="advantages-list__title">Мало туристов</h2>
+                  </li>
+                  <li>
+                    <p class="advantages-list__number">&mdash; №5 &mdash;</p>
+                  </li>
+                  <li>
+                    <p class="advantages-list__desc">Большинство едет в гранд каньон и толпится там</p>
+                  </li>
+                </ul>
               </article>
 
             </section>
@@ -135,7 +166,13 @@
             <a class="feedback__link">
               Найти Гостиницу
             </a>
-            <img class="feedback__img" src="./img/feedback/map-mobile.jpg" alt="map" width="320" height="350">
+            <!-- <img class="feedback__img" src="./img/feedback/map-mobile.jpg" alt="map" width="320" height="350"> -->
+            <picture class="feedback__img">
+              <source srcset="./img/feedback/map-mobile.jpg" media="(max-width: 767px)" width="320" height="350">
+              <source srcset="./img/feedback/map-tablet.jpg" media="(min-width: 768px)" width="768" height="350">
+              <source srcset="./img/feedback/map-desktop.jpg" media="(min-width: 1200px)" width="1200" height="350">
+              <img src="./img/feedback/map-mobile.jpg" alt="Карта" width="320" height="350">
+             </picture>
           </div>
         </section>
       </main>

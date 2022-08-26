@@ -2,6 +2,15 @@
 
 .advantages{
   padding-top: 32px;
+  @include phones {
+
+  }
+  @include tablets {
+
+  }
+  @include desktops {
+
+  }
 }
 
 .advantages__title {
@@ -12,10 +21,27 @@
   text-transform: uppercase;
   color: $black;
   margin: 0 auto;
-  min-width: 303px;
+  @include phones {
+    min-width: 303px;
+  }
+  @include tablets {
+    max-width: 520px;
+  }
+  @include desktops {
+    max-width: 520px;
+  }
 }
 
 .advantages__text {
+  @include phones {
+
+  }
+  @include tablets {
+
+  }
+  @include desktops {
+
+  }
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -26,34 +52,198 @@
   margin: 35px 0 auto;
 }
 
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  @include tablets {
+
+
+    // flex-wrap: wrap;
+  }
+  @include desktops {
+
+
+    // flex-wrap: wrap;
+  }
+}
+
+.advantages-list__item {
+  @include phones {
+
+  }
+  @include tablets {
+
+  }
+
+  @include desktops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// .advantages-list__img{
+//   @include phones {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     white-space: nowrap;
+//     clip-path: inset(100%);
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;
+//   }
+//   @include tablets {
+//     display: block;
+//   }
+//   @include desktops {
+//     display: block;
+//   }
+// }
+
+.advantages-list__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  @include phones {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+  @include tablets {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    max-width: 192px;
+  }
+  @include desktops {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    max-width: 192px;
+  }
+}
+
+.advantages-list__art3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .advantages-list__item--opt1 {
-  margin-top: 16px;
-  padding-top: 69px;
-  padding-bottom: 300px;
-  background-image: url("./../img/features/white__triantgles.svg"), url("./../img/features/photo-city.jpg");
-  background-repeat: no-repeat;
-  background-position: center top, center bottom;
-  background-size: 768px 37px, 520px 260px;
   background-color: $blue;
+  @include phones {
+    margin-top: 16px;
+    padding-top: 69px;
+    padding-bottom: 300px;
+    background-image: url("./../img/features/white__triantgles.svg"), url("./../img/features/photo-city.jpg");
+    background-repeat: no-repeat;
+    background-position: center top, center bottom;
+    background-size: 768px 37px, 520px 260px;
+  }
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 44px;
+    padding-right: 66vw;
+    background-image: url("./../img/features/photo-city.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 66vw 256px;
+  }
+  @include desktops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 47px;
+    padding-bottom: 56px;
+    padding-right: 66vw;
+    background-image: url("./../img/features/photo-city-hd.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 66vw 256px;
+  }
 }
 
 .advantages-list__item--opt2 {
-  padding-top: 39px;
-  padding-bottom: 295px;
-  background-image:
-  url("./../img/features/devils__bridge.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 520px 260px;
   background-color: $blue;
+  @include phones {
+    margin-top: 16px;
+    padding-top: 69px;
+    padding-bottom: 300px;
+    background-image: url("./../img/features/devils__bridge.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 520px 260px;
+  }
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 44px;
+    padding-left: 66vw;
+    background-image: url("./../img/features/devils__bridge.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 66vw 256px;
+  }
+  @include desktops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 47px;
+    padding-bottom: 56px;
+    padding-left: 66vw;
+    background-image: url("./../img/features/devils__bridge-hd.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 66vw 256px;
+  }
 }
-
-/* ВОПРОС: Правильно ли я сверстал правило, которое ниже ниже? */
 
 .advantages-list__item--opt3{
   background-color: $lightgray;
-  background-image: url("./../img/features/line.svg");
-  background-repeat: repeat-x;
+  display: flex;
+
+  @include phones {
+    background-image: url("./../img/features/line.svg");
+    background-repeat: repeat-x;
+    padding: 26px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include tablets {
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+  @include desktops {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
   padding: 26px 0;
   .advantages-list__title{
     color: $black;
@@ -64,28 +254,27 @@
   }
 }
 
-.advantages-list__title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $white;
-}
-
 .advantages-list__number {
-  margin: 11px 0 auto;
+  margin: 11px auto 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: $white;
+  @include phones {
+
+  }
+  @include tablets {
+
+  }
+  @include desktops {
+    margin: 21px auto 0;
+  }
 }
 
 .advantages-list__desc {
-  margin: 17px 0 auto;
+  margin: 17px auto 0 ;
   max-width: 319px;
   font-weight: 400;
   font-size: 14px;
@@ -93,51 +282,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-}
-
-.benefits-item {
-  padding-left: 15px;
-  padding-top: 25px;
-  display: grid;
-  grid-template-columns: 51px 256px;
-  grid-template-rows: 38px 1fr;
-}
-
-.benefits-item:last-child {
-  padding-bottom: 52px;
-}
-
-.benefits-item__img {
-  grid-column-start: 1;
-  grid-row-start: 1;
-}
-
-.benefits-item__title {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  grid-column-start: 2;
-  grid-row-start: 1;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: $black;
-  padding-top: 7px;
-}
-
-.benefits-item__desc {
-  margin: 0;
-  padding: 0;
-  grid-column-start: 2;
-  grid-row-start: 2;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: $gray;
-  padding-top: 16px;
-  min-width: 232px;
+  @include tablets {
+    max-width: 192px;
+  }
+  @include tablets {
+    max-width: 319px;
+  }
 }
