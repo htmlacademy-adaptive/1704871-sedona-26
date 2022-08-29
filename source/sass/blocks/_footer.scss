@@ -18,9 +18,13 @@
 
 .network-list{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 80px;
   margin-top: 33px;
+}
+
+.network-list__vk {
+  margin-right: 6px;
 }
 
 .network-list__vk-link{
@@ -29,6 +33,10 @@
   padding: 17px 12px;
   line-height: 0;
   align-self: center;
+}
+
+.network-list__tg {
+  margin-right: 6px;
 }
 
 .network-list__tg-link {

@@ -2,35 +2,23 @@
   display: block;
 }
 
-/* ВОПРОС: Правильно ли я сделал подключение фонов? */
-
 .hero--index {
   background-image:
-  url("./../img/hero/hero-text180x214.svg"),
-  url("./../img/hero/triangles.svg"),
-  url("./../img/hero/background.jpg");
+  url("../img/hero/hero-text180x214.svg"),
+  url("../img/hero/triangles.svg"),
+  url("../img/hero/background.jpg");
   background-position: center center, center bottom, center -1px;
-  background-size: 180px 214px, 1200px 57px, 901px 389px;
+  background-size: 180px 214px, 1280px 61px, 1200px 518px;
   background-repeat: no-repeat;
   padding-top: 173px;
   padding-bottom: 167px;
-  @include phones {
-
-  }
-  @include tablets {
-    background-size: 180px 214px, 1200px 57px, 100vw 389px;
-  }
-  @include desktops {
-    background-size: 180px 214px, 1200px 57px, 1280px 389px;
-  }
 }
-
 
 .hero--short{
   display: block;
   background: url("./../img/hero/triangles.svg"), url("./../img/hero/background.jpg");
-  background-position: center bottom, center -231px;
-  background-size: 1200px 57px, 901px 389px;
+  background-position: center bottom, center bottom;
+  background-size: 1280px 61px, 1200px 389px;
   background-repeat: no-repeat;
   padding-top: 52px;
   padding-bottom: 57px;

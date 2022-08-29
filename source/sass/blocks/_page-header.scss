@@ -17,8 +17,14 @@
 }
 
 .nav-list {
-  display: flex;
-  justify-content: space-around;
+  width: 100%;
+  @include phones {
+    display: none;
+  }
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .nav-list__item {
@@ -32,7 +38,26 @@
   color: $black;
   padding-top: 18px;
   padding-bottom: 17px;
-  width: 20vw;
+  width: 20%;
+  &:nth-child(2){
+    margin-right: 10%;
+  }
+  &:nth-child(3){
+    margin-left: 10%;
+  }
+}
+
+.nav-list__link {
+text-decoration: none;
+color: $black;
+  &:hover{
+    text-decoration: none;
+    color: $blue;
+  }
+}
+
+.nav-list__link--current{
+  color: $current;
 }
 
 .main-nav__burger {

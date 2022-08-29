@@ -10,41 +10,47 @@
   <body class="page__body">
     <div class="wrapper">
       <header class="page-header">
+        <div class="container">
+
           <a class="page-header__logo" href="#">
             <svg class="page-header__icon-logo" width="185" height="96">
                 <use href="img/sprite.svg#logo185x96"></use>
             </svg>
           </a>
-        <nav class="main-nav">
-          <button type="button" class="main-nav__burger">
-            <span class="visually-hidden">Открыть меню</span>
-            <span class="main-nav__burger-plank"></span>
-            <span class="main-nav__burger-plank"></span>
-            <span class="main-nav__burger-plank"></span>
-          </button>
-          <ul class="nav-list visually-hidden" >
-            <li class="nav-list__item nav-list__item--active">
-              <a href="#">
-                ГЛАВНАЯ
-              </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">
-                ФОТО И ВИДЕО
-              </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">
-                ФОРМА ОТЗЫВА
-              </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">
-                HTML ACADEMY
-              </a>
-            </li>
-          </ul>
-        </nav>
+
+          <nav class="main-nav">
+
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="index.html">
+                  ГЛАВНАЯ
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="catalog.html">
+                  ФОТО И ВИДЕО
+                </a>
+              </li>
+              <li class="nav-list__item ">
+                <a class="nav-list__link nav-list__link--current" class="nav-list__link" href="form.html">
+                  ФОРМА ОТЗЫВА
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="https://htmlacademy.ru/">
+                  HTML ACADEMY
+                </a>
+              </li>
+            </ul>
+
+            <a type="button" class="main-nav__burger">
+              <span class="visually-hidden">Открыть меню</span>
+              <span class="main-nav__burger-plank"></span>
+              <span class="main-nav__burger-plank"></span>
+              <span class="main-nav__burger-plank"></span>
+            </a>
+          </nav>
+        </div>
       </header>
 
       <main class="maincontent">
@@ -65,7 +71,7 @@
 
             <form class="user-opinion" action="https://echo.htmlacademy.ru/" method="post">
 
-              <fieldset class="fieldset">
+              <fieldset class="fieldset fieldset--user-name">
                 <h2 class="fieldset__title">Представьтесь:</h2>
                 <label class="fieldset__input">
                   <p class="form-label">ИМЯ*:</p>
@@ -81,7 +87,7 @@
               </fieldset>
 
 
-              <fieldset class="fieldset">
+              <fieldset class="fieldset fieldset--user-info">
                 <h2 class="fieldset__title">контактная информация:</h2>
                 <label class="fieldset__input">
                   КОНТАКТНЫЙ ТЕЛЕФОН*:<input class="form-input form-input--phone" name="phone" placeholder="Введите телефон" type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
@@ -91,9 +97,9 @@
                 </label>
               </fieldset>
 
+              <h2 class="user-opinion__title">ваше общее впечатление:</h2>
 
-              <fieldset class="fieldset">
-                <h2 class="fieldset__title">ваше общее впечатление:</h2>
+              <fieldset class="fieldset fieldset--user-impres">
                 <label class="fieldset__radio">
                   <input class="radio-elem" type="radio" name="opinion" value="positive">
                   <span class="radio-style"></span>
@@ -111,9 +117,9 @@
                 </label>
               </fieldset>
 
+              <h2 class="user-opinion__title">посещенные достопримечательности:</h2>
 
-              <fieldset class="fieldset">
-                <h2 class="fieldset__title">посещенные достопримечательности:</h2>
+              <fieldset class="fieldset fieldset--user-visited">
                 <label class="fieldset__checkbox">
                   <input class="checkbox-elem" type="checkbox" name="visited" value="devil__bridge">
                   <span class="checkbox-style"></span>
@@ -137,7 +143,7 @@
               </fieldset>
 
 
-              <fieldset class="fieldset">
+              <fieldset class="fieldset fieldset--user-emotions">
                 <h2 class="fieldset__title">опишите свои эмоции:</h2>
                 <label class="fieldset__label">
                   <p class="visually-hidden">Опишите подробно все свои восторги</p>

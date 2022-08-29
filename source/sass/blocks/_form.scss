@@ -1,9 +1,20 @@
 .user-opinion{
   display: flex;
   flex-direction: column;
-  background-image: url("./../img/features/line.svg");
+  background-image: url("../img/features/line.svg");
   background-repeat: repeat-x;
   background-position: top;
+}
+
+.user-opinion__title {
+  width: 100%;
+  @include tablets {
+    padding: 0 263px;
+    text-align: center;
+  }
+  @include desktops {
+    padding: 0 439px;
+  }
 }
 
 .form__title {
@@ -29,6 +40,13 @@
 
 .user-opinion{
   margin-top: 28px;
+
+  @include tablets{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
 }
 
 .fieldset {
@@ -41,7 +59,34 @@
   align-items: center;
 }
 
-.fieldset__title{
+.fieldset--user-name,
+.fieldset--user-info {
+  @include tablets {
+    max-width: 383px;
+  }
+}
+
+.fieldset--user-impres,
+.fieldset--user-emotions {
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.fieldset--user-visited,
+.fieldset--user-impres {
+  @include tablets {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+.fieldset__title,
+.user-opinion__title {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -176,7 +221,7 @@
 }
 
 .checkbox-elem:checked + .checkbox-style {
-  background-image: url("./../img/form/tick.svg");
+  background-image: url("../img/form/tick.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -188,10 +233,13 @@
   resize: none;
   outline: none;
   border: none;
+  @include tablets {
+    width: 648px;
+  }
 }
 
 .fieldset__textarea::placeholder {
-  font-family: Arial;
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -208,6 +256,9 @@
   font-size: 21px;
   line-height: 26px;
   align-self: center;
+  @include tablets {
+    max-width: 324px;
+  }
 }
 
 .form__submit{
@@ -215,4 +266,10 @@
   margin-right: 20px;
   color: $gray;
   margin-bottom: 52px;
+  @include tablets {
+    max-width: 324px;
+    align-self: center;
+    margin: auto 0;
+    margin-left: 194px;
+  }
 }
