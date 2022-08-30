@@ -1,0 +1,111 @@
+.gallery {
+  padding: 0px 20px;
+}
+
+.gallery__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  margin: 0 auto;
+  @include phones {
+    min-width: 303px;
+  }
+  @include tablets {
+    max-width: 520px;
+  }
+  @include desktops {
+    max-width: 520px;
+  }
+}
+
+.gallery__text {
+  @include phones {
+
+  }
+  @include tablets {
+
+  }
+  @include desktops {
+
+  }
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $gray;
+  min-width: 303px;
+  margin: 35px 0 auto;
+}
+
+.item__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.item__author {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $gray;
+}
+
+.item__button{
+  display: block;
+  width: 23px;
+  height: 21px;
+  background-image: url("../../img/gallery/like-icon.svg");
+  background-repeat: no-repeat;
+
+}
+
+.item__number-likes {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.item{
+  display: grid;
+  grid-template-columns: 23px 1fr;
+  grid-template-rows: 280px 35px 47px 43px;
+}
+
+.item__img{
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+}
+
+.item__title{
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+}
+
+.item__author{
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+}
+
+.item__button{
+  margin-top: 11px;
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+}
+
+.item__number-likes{
+  margin-left: 11px;
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+}
+

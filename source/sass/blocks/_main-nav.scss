@@ -1,0 +1,95 @@
+.main-nav {
+  @include phones {
+  display: flex;
+  flex-direction: row-reverse;
+  }
+}
+
+.nav-list {
+  width: 100%;
+  @include phones {
+    display: none;
+  }
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nav-list__item {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  width: 20%;
+  &:nth-child(2){
+    margin-right: 10%;
+  }
+  &:nth-child(3){
+    margin-left: 10%;
+  }
+}
+
+.nav-list__link {
+text-decoration: none;
+color: $black;
+  &:hover{
+    text-decoration: none;
+    color: $blue;
+  }
+}
+
+.nav-list__link--current{
+  color: $current;
+}
+
+.main-nav__burger {
+  @include phones {
+    border: none;
+    padding: 17px 20px 17px 17px;
+    background: $white;
+  }
+  @include tablets {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+  }
+  @include desktops {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+.main-nav__burger-plank:nth-child(2) {
+  margin-top: 0px;
+}
+
+.main-nav__burger-plank {
+  display: block;
+  margin-top: 4px;
+  background: $blue;
+  height: 4px;
+  width: 23px;
+}
+

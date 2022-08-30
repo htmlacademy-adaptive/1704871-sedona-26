@@ -32,7 +32,7 @@
                 </a>
               </li>
               <li class="nav-list__item ">
-                <a class="nav-list__link nav-list__link--current" class="nav-list__link" href="form.html">
+                <a class="nav-list__link nav-list__link--current" href="form.html">
                   ФОРМА ОТЗЫВА
                 </a>
               </li>
@@ -43,7 +43,7 @@
               </li>
             </ul>
 
-            <a type="button" class="main-nav__burger">
+            <a class="main-nav__burger" href="#">
               <span class="visually-hidden">Открыть меню</span>
               <span class="main-nav__burger-plank"></span>
               <span class="main-nav__burger-plank"></span>
@@ -74,15 +74,15 @@
               <fieldset class="fieldset fieldset--user-name">
                 <h2 class="fieldset__title">Представьтесь:</h2>
                 <label class="fieldset__input">
-                  <p class="form-label">ИМЯ*:</p>
+                  <span class="form-label">ИМЯ*:</span>
                   <input class="form-input"  name="name" type="text">
                 </label>
                 <label class="fieldset__input">
-                  <p class="form-label">ФАМИЛИЯ*:</p>
+                  <span class="form-label">ФАМИЛИЯ*:</span>
                   <input class="form-input" name="surname" type="text">
                 </label>
                 <label class="fieldset__input">
-                  <p class="form-label">ОТЧЕСТВО*:</p><input class="form-input" name="second-name" type="text">
+                  <span class="form-label">ОТЧЕСТВО*:</span><input class="form-input" name="second-name" type="text">
                 </label>
               </fieldset>
 
@@ -90,10 +90,10 @@
               <fieldset class="fieldset fieldset--user-info">
                 <h2 class="fieldset__title">контактная информация:</h2>
                 <label class="fieldset__input">
-                  КОНТАКТНЫЙ ТЕЛЕФОН*:<input class="form-input form-input--phone" name="phone" placeholder="Введите телефон" type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <span class="form-label">КОНТАКТНЫЙ ТЕЛЕФОН*:</span><input class="form-input form-input--phone" name="phone" placeholder="Введите телефон" type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                 </label>
                 <label class="fieldset__input">
-                  ЭЛЕКТРОННАЯ ПОЧТА*:<input class="form-input form-input--email" name="email" placeholder="Введите e-mail" type="email">
+                  <span class="form-label">ЭЛЕКТРОННАЯ ПОЧТА*:</span><input class="form-input form-input--email" name="email" placeholder="Введите e-mail" type="email">
                 </label>
               </fieldset>
 
@@ -103,17 +103,17 @@
                 <label class="fieldset__radio">
                   <input class="radio-elem" type="radio" name="opinion" value="positive">
                   <span class="radio-style"></span>
-                  <p class="radio-text">Скорее положительное</p>
+                  <span class="radio-text">Скорее положительное</span>
                 </label>
                 <label class="fieldset__radio">
                   <input class="radio-elem" type="radio" name="opinion" value="negative">
                   <span class="radio-style"></span>
-                  <p class="radio-text">Скорее отрицательное</p>
+                  <span class="radio-text">Скорее отрицательное</span>
                 </label>
                 <label class="fieldset__radio">
                   <input class="radio-elem" type="radio" name="opinion" value="dontknow">
                   <span class="radio-style"></span>
-                  <p class="radio-text">Затрудняюсь ответить</p>
+                  <span class="radio-text">Затрудняюсь ответить</span>
                 </label>
               </fieldset>
 
@@ -123,22 +123,22 @@
                 <label class="fieldset__checkbox">
                   <input class="checkbox-elem" type="checkbox" name="visited" value="devil__bridge">
                   <span class="checkbox-style"></span>
-                  <p class="checkbox-text">Мост Дьявола</p>
+                  <span class="checkbox-text">Мост Дьявола</span>
                 </label>
                 <label class="fieldset__checkbox">
                   <input class="checkbox-elem" type="checkbox" name="visited" value="mountain-bell">
                   <span class="checkbox-style"></span>
-                  <p class="checkbox-text">Гора-Колокол</p>
+                  <span class="checkbox-text">Гора-Колокол</span>
                 </label>
                 <label class="fieldset__checkbox">
                   <input class="checkbox-elem" type="checkbox" name="visited" value="slide-park">
                   <span class="checkbox-style"></span>
-                  <p class="checkbox-text">Слайд-парк</p>
+                  <span class="checkbox-text">Слайд-парк</span>
                 </label>
                 <label class="fieldset__checkbox">
                   <input class="checkbox-elem" type="checkbox" name="visited" value="red-mountains">
                   <span class="checkbox-style"></span>
-                  <p class="checkbox-text">Красные скалы</p>
+                  <span class="checkbox-text">Красные скалы</span>
                 </label>
               </fieldset>
 
@@ -146,9 +146,8 @@
               <fieldset class="fieldset fieldset--user-emotions">
                 <h2 class="fieldset__title">опишите свои эмоции:</h2>
                 <label class="fieldset__label">
-                  <p class="visually-hidden">Опишите подробно все свои восторги</p>
+                  <span class="visually-hidden">Опишите подробно все свои восторги</span>
                   <textarea class="fieldset__textarea" placeholder="Опишите подробно все свои восторги" name="feedback" cols="30" rows="10"></textarea>
-                  <p class="visually-hidden">Опишите подробно все свои восторги</p>
                 </label>
               </fieldset>
 
@@ -201,5 +200,6 @@
         </footer>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

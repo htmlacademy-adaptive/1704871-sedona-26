@@ -43,7 +43,7 @@
               </li>
             </ul>
 
-            <a type="button" class="main-nav__burger">
+            <a class="main-nav__burger">
               <span class="visually-hidden">Открыть меню</span>
               <span class="main-nav__burger-plank"></span>
               <span class="main-nav__burger-plank"></span>
@@ -55,7 +55,7 @@
 
       <main class="maincontent">
 
-        <section class="section hero--short">
+        <section class="hero--short">
           <div class="container">
             <h1 class="visually-hidden">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
             <svg class="hero__icon-sedona hero__icon-sedona--form" width="229" height="39">
@@ -64,69 +64,63 @@
           </div>
         </section>
 
-        <section class="section gallery">
+        <section class="gallery">
           <div class="container">
+            <h2 class="gallery__title">ФОТО И ВИДЕО</h2>
+            <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 
-            <article class="gallery__item"> <!-- ЗАМИКСОВАТЬ-->
-              <a class="gallery__img" href="#">
+            <article class="item gallery__item"> <!-- ЗАМИКСОВАТЬ-->
+              <a class="item__img" href="#">
                 <img src="./img/gallery/photo1-mobile.jpg" alt="photo">
               </a>
-              <h2 class="gallery__item-title">Неродные просторы</h2>
-              <p class="gallery__item-author">Автор фото: Борис</p>
-              <div class="gallery__like-box">
-                <button class="gallery__like-button" type="button"></button>
-                <p class="gallery__number-likes">1350</p>
-              </div>
+              <h2 class="item__title">Неродные просторы</h2>
+              <p class="item__author">Автор фото: Борис</p>
+                <a class="item__button"></a>
+                <p class="item__number-likes">1350</p>
             </article>
 
-            <article class="gallery__item">
-              <a class="gallery__img" href="#">
+            <article class="item gallery__item">
+              <a class="item__img" href="#">
                 <img src="./img/gallery/photo2-mobile.jpg" alt="photo">
               </a>
-              <h2 class="gallery__item-title">Местная растительность</h2>
-              <p class="gallery__item-author">Автор фото: Сергей</p>
-              <div class="gallery__like-box">
-                <button class="gallery__like-button" type="button"></button>
-                <p class="gallery__number-likes">143</p>
-              </div>
+              <h2 class="item__title">Местная растительность</h2>
+              <p class="item__author">Автор фото: Сергей</p>
+                <a class="item__button"></a>
+                <p class="item__number-likes">143</p>
             </article>
 
-            <article class="gallery__item">
-              <a class="gallery__img" href="#">
+            <article class="item gallery__item">
+              <a class="item__img" href="#">
                 <img src="./img/gallery/photo3-mobile.jpg" alt="photo">
               </a>
-              <h2 class="gallery__item-title">Дорога на север</h2>
-              <p class="gallery__item-author">Автор фото: Петр</p>
-              <div class="gallery__like-box">
-                <button class="gallery__like-button" type="button"></button>
-                <p class="gallery__number-likes">96</p>
-              </div>
+              <h2 class="item__title">Дорога на север</h2>
+              <p class="item__author">Автор фото: Петр</p>
+                <a class="item__button"></a>
+                <p class="item__number-likes">96</p>
             </article>
 
-            <article class="gallery__item">
-              <a class="gallery__img" href="#">
+            <article class="item gallery__item">
+              <a class="item__img" href="#">
                 <img src="./img/gallery/photo4-desktop.jpg" alt="photo">
               </a>
-              <h2 class="gallery__item-title">Мост дьявола</h2>
-              <p class="gallery__item-author">Автор фото: Антон</p>
-              <div class="gallery__like-box">
-                <button class="gallery__like-button" type="button"></button>
-                <p class="gallery__number-likes">96</p>
-              </div>
+              <h2 class="item__title">Мост дьявола</h2>
+              <p class="item__author">Автор фото: Антон</p>
+                <a class="item__button"></a>
+                <p class="item__number-likes">96</p>
             </article>
           </div>
-        </section>
+          </section>
 
-        <section class="section feedback">
+          <section class="feedback">
+            <div class="container">
+              <h2 class="feedback__title">все еще сомневаетесь?</h2>
+              <p class="feedback__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <!-- ВСТАВИТЬ ВИДЕОПРЕЗЕНТАЦИЮ -->
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
           <div class="container">
-            <h2 class="feedback__title">все еще сомневаетесь?</h2>
-            <p class="feedback__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <!-- ВСТАВИТЬ ВИДЕОПРЕЗЕНТАЦИЮ -->
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="container">
           <p class="footer__title">#visitSEDONA</p>
           <ul class="network-list">
             <li class="network-list__vk">
@@ -162,5 +156,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
