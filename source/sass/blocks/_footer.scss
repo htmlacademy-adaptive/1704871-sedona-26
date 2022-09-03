@@ -33,6 +33,15 @@
   padding: 17px 12px;
   line-height: 0;
   align-self: center;
+  transition: 0.4s;
+  &:visited {
+    background-color: $blue-visited;
+    transition: 0.4s;
+  }
+  &:hover {
+    background-color: $blue-hover;
+    transition: 0.4s;
+  }
 }
 
 .network-list__tg {
@@ -45,6 +54,14 @@
   background-color: $blue;
   line-height: 0;
   align-self: center;
+  &:visited {
+    background-color: $blue-visited;
+    transition: 0.4s;
+  }
+  &:hover {
+    background-color: $blue-hover;
+    transition: 0.4s;
+  }
 }
 
 .network-list__youtube-link {
@@ -53,6 +70,14 @@
   background-color: $blue;
   line-height: 0;
   align-self: center;
+  &:visited {
+    background-color: $blue-visited;
+    transition: 0.4s;
+  }
+  &:hover {
+    background-color: $blue-hover;
+    transition: 0.4s;
+  }
 }
 
 .footer__sign {
@@ -61,7 +86,20 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  &:hover {
+    .footer__text {
+    color: $blue;
+    transition: 0.4s;
+    fill: $blue;
+    }
+  }
 }
+
+.footer__logo-img:hover {
+  color: $blue;
+  transition: 0.4s;
+  fill: $blue;
+  }
 
 .footer__text {
   font-style: normal;

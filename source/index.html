@@ -14,13 +14,13 @@
       <header class="page-header">
         <div class="container">
 
-          <a class="page-header__logo" href="#">
-            <svg class="page-header__icon-logo" width="185" height="96">
-                <use href="img/sprite.svg#logo185x96"></use>
-            </svg>
-          </a>
 
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <a class="page-header__logo" href="#">
+              <svg class="page-header__icon-logo" width="185" height="96">
+                  <use href="img/sprite.svg#logo185x96"></use>
+              </svg>
+            </a>
 
             <ul class="nav-list">
               <li class="nav-list__item">
@@ -204,9 +204,13 @@
           <div class="footer__sign">
             <p class="footer__text">Разработано</p>
             <a class="footer__logo" href="https://htmlacademy.ru">
-              <svg class="footer__logo-svg" width="27" height="34">
+            <object class="footer__logo-img" type="image/svg+xml" data="img/footer/htmlacademy.svg" width="27" height="34" >
+              Your browser does not support SVG
+            </object>
+              <!-- <img class="footer__logo-img"src="img/footer/htmlacademy.svg" width="27" height="34" alt="html-academy"> -->
+              <!-- <svg class="footer__logo-svg" width="27" height="34">
                 <use href="img/sprite.svg#academylogo27x34"></use>
-              </svg>
+              </svg> -->
             </a>
           </div>
         </div>
