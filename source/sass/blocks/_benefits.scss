@@ -103,3 +103,26 @@
 
   }
 }
+
+.benefits-item__icon-gift {
+  @include tablets {
+    width: 64px;
+    height: 75px;
+  }
+}
+
+.benefits-item__icon-house {
+  @include tablets {
+    width: 75px;
+    height: 72px;
+  }
+}
+
+.benefits-item__icon-burger {
+  @include tablets {
+    width: 76px;
+    height: 68px;
+  }
+}
+
+

@@ -4,14 +4,17 @@
 
 .hero--index {
   background-image:
-  url("../img/hero/hero-text180x214.svg"),
   url("../img/hero/triangles.svg"),
   url("../img/hero/background.jpg");
-  background-position: center center, center bottom, center -1px;
-  background-size: 180px 214px, 1280px 61px, 1200px 518px;
+  background-position: center bottom -1px, center -24px;
+  background-size: 1280px 61px, 1200px 518px;
   background-repeat: no-repeat;
-  padding-top: 173px;
-  padding-bottom: 167px;
+  padding-top: 90px;
+  padding-bottom: 89px;
+  @include tablets {
+    padding-top: 77px;
+    padding-bottom: 97px;
+  }
 }
 
 .hero--short{
@@ -21,15 +24,37 @@
   background-size: 1280px 61px, 1200px 389px;
   background-repeat: no-repeat;
   padding-top: 52px;
-  padding-bottom: 57px;
+  padding-bottom: 67px;
+  @include tablets {
+    padding-top: 95px;
+    padding-bottom: 117px;
+  }
+}
+
+.hero__icon-sedona,
+.hero__icon-because {
+  display: block;
+  margin: 0 auto;
+  @include phones{
+    margin-top: 31px;
+    }
+  @include tablets{
+  margin-top: 58px;
+  }
 }
 
 .hero__icon-sedona {
+  @include tablets{
+    width: 461px;
+    height: 79px;
+    }
+}
+
+.hero__icon-welcome {
   display: block;
   margin: 0 auto;
 }
 
-.hero__icon-text {
-  display: block;
-  margin: 0 auto;
+.hero__icon-sedona--short {
+  margin-top: 0px;
 }
