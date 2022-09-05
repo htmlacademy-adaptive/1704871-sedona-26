@@ -11,6 +11,14 @@
   .main-nav__burger-plank{
     display: none;
   }
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.4s;
+  }
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.4s;
+  }
 }
 
 .main-nav--opened .page-header__logo {

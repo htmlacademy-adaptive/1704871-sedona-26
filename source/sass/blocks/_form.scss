@@ -1,20 +1,38 @@
-.user-opinion{
+.user-opinion {
   display: flex;
   flex-direction: column;
   background-image: url("../img/features/line.svg");
   background-repeat: repeat-x;
   background-position: top;
+  margin-top: 28px;
+  @include tablets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image:none;
+  }
+  @include desktops {
+    justify-content: space-evenly;
+  }
 }
 
 .user-opinion__title {
   width: 100%;
+
   @include tablets {
+
+    background-image: url("../img/form/line.svg"), url("../img/form/line.svg");
+    background-repeat: no-repeat;
+    background-position: center right 8vw, center left 8vw;
+    background-size: 16vw 1px;
     padding: 0 263px;
     text-align: center;
   }
   @include desktops {
     padding: 0 439px;
   }
+  color: #8d8d8d;
 }
 
 .form__title {
@@ -27,7 +45,7 @@
   color: $black;
 }
 
-.form__text{
+.form__text {
   margin-top: 36px;
   min-width: 282px;
   font-weight: 400;
@@ -38,16 +56,6 @@
   color: $gray;
 }
 
-.user-opinion{
-  margin-top: 28px;
-
-  @include tablets{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  }
-}
 
 .fieldset {
   background-image: url("./../img/features/line.svg");
@@ -57,30 +65,90 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  @include tablets {
+    background-image: none;
+  }
 }
 
-.fieldset--user-name,
+.fieldset--user-name {
+  @include tablets {
+    width: 50%;
+    padding-right: 6%;
+    padding-left: 8%;
+    background-image: url("../img/form/live_vert.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+
+  }
+  @include desktops {
+    width: 50%;
+    padding-right: 5%;
+    padding-left: 10%;
+  }
+}
+
+
 .fieldset--user-info {
   @include tablets {
-    max-width: 383px;
+    width: 50%;
+    padding-left: 6%;
+    padding-right: 8%;
+  }
+  @include desktops {
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 10%;
   }
 }
 
-.fieldset--user-impres,
-.fieldset--user-emotions {
+.fieldset--user-impres{
   @include tablets {
-    width: 100%;
-  }
-}
-
-.fieldset--user-visited,
-.fieldset--user-impres {
-  @include tablets {
+    padding-left: 12%;
+    padding-right: 12%;
+    // padding: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  @include desktops {
     justify-content: center;
+  }
+}
+
+
+.fieldset--user-emotions {
+  // padding: 0 auto;
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.fieldset--user-visited {
+  @include phones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include tablets {
+    padding-left: 18vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  @include desktops {
+    justify-content: space-between;
+    padding: 0 164px;
   }
 }
 
@@ -104,6 +172,9 @@
   color: $gray;
   display: flex;
   flex-direction: column;
+  @include tablets {
+    width: 100%;
+  }
 }
 .form-label {
   margin-left: 23px;
@@ -121,15 +192,17 @@
   color: $black;
   padding-left: 20px;
   outline: none;
-
+  @include tablets {
+    width: 100%;
+  }
 }
- /* ВОПРОС: Правильно ли я сделал размеры через widht? */
+
 
 .form-input--phone {
   background-image: url("./../img/form/phone.svg"), url("./../img/form/rect.svg");
   background-position: center right 20px, right;
   background-repeat: no-repeat;
-  width: 280px;
+  width: 100%;
   padding: 0 60px 0 20px;
 }
 
@@ -137,24 +210,30 @@
   background-image: url("./../img/form/mail.svg"), url("./../img/form/rect.svg");
   background-position: center right 20px, right;
   background-repeat: no-repeat;
-  width: 280px;
+  width: 100%;
   padding: 0 60px 0 20px;
 }
 
-/* ВОПРОС: По непонятным причинам в placeholder'e не работают подключаемые несистемные шрифты.
-            Работают только системные. Что делать? */
-
 .form-input::placeholder {
-  font-family: Arial;
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
 
-.fieldset__radio {
+.fieldset__radio{
   display: flex;
   height: 58px;
-  min-width: 280px;
+  width: 280px;
+
+  &:first-child{
+    @include tablets {
+      width: 50%;
+    }
+    @include desktops {
+      width: 280px;
+    }
+  }
 }
 
 .radio-text{
@@ -195,7 +274,27 @@
   margin-top: 15px;
   display: flex;
   height: 46px;
-  min-width: 280px;
+  width: 280px;
+  @include tablets {
+    &:nth-child(1) {
+      width: 39%;
+    }
+    &:nth-child(3) {
+      width: 39%;
+    }
+    &:last-child {
+      max-width: 180px;
+    }
+  }
+  @include desktops {
+    max-width: 180px;
+    &:nth-child(1) {
+      max-width: 180px;
+    }
+    &:nth-child(3) {
+      max-width: 180px;
+    }
+  }
 }
 
 .checkbox-text{
@@ -226,6 +325,20 @@
   background-repeat: no-repeat;
 }
 
+.fieldset__label {
+  @include phones {
+    width: 90%;
+
+  }
+  @include tablets {
+    width: 648px;
+
+  }
+  @include desktops {
+    width: 768px;
+  }
+}
+
 .fieldset__textarea{
   min-width: 279px;
   height: 150px;
@@ -233,8 +346,12 @@
   resize: none;
   outline: none;
   border: none;
+  @include phones {
+    width: 100%;
+
+  }
   @include tablets {
-    width: 648px;
+    width: 100%;
   }
 }
 
@@ -261,15 +378,32 @@
   }
 }
 
-.form__submit{
+.form-submit__text{
   align-self: flex-end;
   margin-right: 20px;
   color: $gray;
   margin-bottom: 52px;
   @include tablets {
     max-width: 324px;
-    align-self: center;
+    align-self: flex-end;
     margin: auto 0;
-    margin-left: 194px;
+  }
+}
+
+.fieldset--submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include phones {
+    margin: 48px auto 0px;
+    width: 320px;
+  }
+  @include tablets {
+    flex-direction: row;
+    width: 648px;
+
+  }
+  @include desktops {
+    width: 768px;
   }
 }

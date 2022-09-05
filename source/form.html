@@ -22,7 +22,7 @@
 
             <ul class="nav-list">
               <li class="nav-list__item">
-                <a class="nav-list__link nav-list__link--current" href="index.html">
+                <a class="nav-list__link" href="index.html">
                   ГЛАВНАЯ
                 </a>
               </li>
@@ -32,7 +32,7 @@
                 </a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link" class="nav-list__link" href="form.html">
+                <a class="nav-list__link nav-list__link--current" class="nav-list__link" href="form.html">
                   ФОРМА ОТЗЫВА
                 </a>
               </li>
@@ -62,7 +62,7 @@
           </div>
         </section>
 
-        <section class="section form">
+        <section class="form">
           <div class="container">
             <h2 class="form__title">Оставьте свой отзыв</h2>
             <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -149,10 +149,13 @@
                 </label>
               </fieldset>
 
-              <input class="form-submit" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
-              <p class="form__submit">
-                * - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
-              </p>
+              <fieldset class="fieldset fieldset--submit">
+                <input class="form-submit" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+                <p class="form-submit__text">
+                  * - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
+                </p>
+              </fieldset>
+
             </form>
           </div>
         </section>

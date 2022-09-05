@@ -10,8 +10,13 @@
   width: 100%;
   @include phones {
     display: none;
+    background-image: linear-gradient(180deg, $black-op 0%, $black-op02 100%);
+    background-position: bottom;
+    background-size: 800px 10px;
+    background-repeat: no-repeat;
   }
   @include tablets {
+    background-image: none;
     display: flex;
     justify-content: center;
   }
@@ -41,9 +46,9 @@
 text-decoration: none;
 color: $black;
 transition: 0.4s;
-  &:visited {
-    color: $black;
+  &:active {
     opacity: 0.3;
+    transition: 0.4s;
   }
   &:hover {
     text-decoration: none;
@@ -73,6 +78,14 @@ transition: 0.4s;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.4s;
+  }
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.4s;
   }
 }
 .main-nav__burger-plank:nth-child(2) {
