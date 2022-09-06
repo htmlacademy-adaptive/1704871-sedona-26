@@ -67,45 +67,77 @@
             <h2 class="gallery__title">ФОТО И ВИДЕО</h2>
             <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 
-            <article class="item gallery__item"> <!-- ЗАМИКСОВАТЬ-->
-              <a class="item__img" href="#">
-                <img src="./img/gallery/photo1-mobile.jpg" alt="photo">
+            <figure class="item gallery__item">
+              <a class="item__link" href="#">
+                <picture class="item__img main-gallery-img">
+                  <source srcset="./img/gallery/photo1-mobile.jpg" media="(max-width: 767px)">
+                  <source srcset="./img/gallery/photo1-tablet.jpg" media="(max-width: 1199px)">
+                  <source srcset="./img/gallery/photo1-desktop.jpg" media="(min-width: 1200px)">
+                  <img srcset="./img/gallery/photo1-mobile.jpg" alt="Фотография гостя" >
+                </picture>
               </a>
-              <h2 class="item__title">Неродные просторы</h2>
-              <p class="item__author">Автор фото: Борис</p>
-                <a class="item__button"></a>
-                <p class="item__number-likes">1350</p>
-            </article>
+              <figcaption class="item__figcaption">
+                <h2 class="item__title">Неродные просторы</h2>
+                <p class="item__author">Автор фото: Борис</p>
+                  <a class="item__button">
+                    <p class="item__number-likes">1350</p>
+                  </a>
+              </figcaption>
+            </figure>
 
-            <article class="item gallery__item">
-              <a class="item__img" href="#">
-                <img src="./img/gallery/photo2-mobile.jpg" alt="photo">
+            <figure class="item gallery__item">
+              <a class="item__link" href="#">
+                <picture class="item__img">
+                  <source srcset="./img/gallery/photo2-mobile.jpg" media="(max-width: 767px)">
+                  <source srcset="./img/gallery/photo2-tablet.jpg" media="(max-width: 1199px)">
+                  <source srcset="./img/gallery/photo2-desktop.jpg" media="(min-width: 1200px)">
+                  <img srcset="./img/gallery/photo2-mobile.jpg" alt="Фотография гостя" >
+                </picture>
               </a>
-              <h2 class="item__title">Местная растительность</h2>
-              <p class="item__author">Автор фото: Сергей</p>
-                <a class="item__button"></a>
-                <p class="item__number-likes">143</p>
-            </article>
+              <figcaption class="item__figcaption">
+                <h2 class="item__title">Местная растительность</h2>
+                <p class="item__author">Автор фото: Сергей</p>
+                  <a class="item__button">
+                    <p class="item__number-likes">143</p>
+                  </a>
+              </figcaption>
+            </figure>
 
-            <article class="item gallery__item">
-              <a class="item__img" href="#">
-                <img src="./img/gallery/photo3-mobile.jpg" alt="photo">
+            <figure class="item gallery__item">
+              <a class="item__link" href="#">
+                <picture class="item__img">
+                  <source srcset="./img/gallery/photo3-mobile.jpg" media="(max-width: 767px)">
+                  <source srcset="./img/gallery/photo3-tablet.jpg" media="(max-width: 1199px)">
+                  <source srcset="./img/gallery/photo3-desktop.jpg" media="(min-width: 1200px)">
+                  <img srcset="./img/gallery/photo3-mobile.jpg" alt="Фотография гостя" >
+                </picture>
               </a>
-              <h2 class="item__title">Дорога на север</h2>
-              <p class="item__author">Автор фото: Петр</p>
-                <a class="item__button"></a>
-                <p class="item__number-likes">96</p>
-            </article>
+              <figcaption class="item__figcaption">
+                <h2 class="item__title">Дорога на север</h2>
+                <p class="item__author">Автор фото: Петр</p>
+                  <a class="item__button">
+                    <p class="item__number-likes">96</p>
+                  </a>
+              </figcaption>
+            </figure>
 
-            <article class="item gallery__item">
-              <a class="item__img" href="#">
-                <img src="./img/gallery/photo4-desktop.jpg" alt="photo">
+            <figure class="item gallery__item">
+              <a class="item__link" href="#">
+                <picture class="item__img">
+                  <source srcset="./img/gallery/photo4-mobile.jpg" media="(max-width: 767px)">
+                  <source srcset="./img/gallery/photo4-tablet.jpg" media="(max-width: 1199px)">
+                  <source srcset="./img/gallery/photo4-desktop.jpg" media="(min-width: 1200px)">
+                  <img srcset="./img/gallery/photo4-mobile.jpg" alt="Фотография гостя" >
+                </picture>
               </a>
-              <h2 class="item__title">Мост дьявола</h2>
-              <p class="item__author">Автор фото: Антон</p>
-                <a class="item__button"></a>
-                <p class="item__number-likes">96</p>
-            </article>
+              <figcaption class="item__figcaption">
+                <h2 class="item__title">Мост дьявола</h2>
+                <p class="item__author">Автор фото: Антон</p>
+                  <a class="item__button">
+                    <p class="item__number-likes">254</p>
+                  </a>
+              </figcaption>
+            </figure>
           </div>
           </section>
 
@@ -113,7 +145,7 @@
             <div class="container">
               <h2 class="feedback__title">все еще сомневаетесь?</h2>
               <p class="feedback__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-              <!-- ВСТАВИТЬ ВИДЕОПРЕЗЕНТАЦИЮ -->
+
             </div>
           </section>
         </main>

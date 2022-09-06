@@ -1,5 +1,13 @@
 .gallery {
   padding: 0px 20px;
+  @include tablets {
+    padding: 0;
+    width: 648px;
+    margin: 0 auto;
+  }
+  @include desktops {
+    width: 1200px;
+  }
 }
 
 .gallery__title {
@@ -41,71 +49,198 @@
   margin: 35px 0 auto;
 }
 
+// .gallery__item {
+//   @include tablets {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
+
 .item__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: $black;
+  @include phones {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $black;
+  }
 }
 
 .item__author {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: $gray;
+  @include phones {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $gray;
+  }
 }
 
 .item__button{
-  display: block;
-  width: 23px;
-  height: 21px;
-  background-image: url("../../img/gallery/like-icon.svg");
-  background-repeat: no-repeat;
+  @include phones {
+    display: block;
+    width: 23px;
+    height: 21px;
+    background-image: url("../../img/gallery/like-icon.svg");
+    background-repeat: no-repeat;
 
+  }
+  @include desktops {
+    background-image: url("../../img/gallery/like-icon-white.svg");
+  }
 }
 
 .item__number-likes {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: $black;
+  @include phones {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $black;
+  }
 }
 
-.item{
+.item {
+  @include phones {
   display: grid;
-  grid-template-columns: 23px 1fr;
+  grid-template-columns: 280px 1fr;
   grid-template-rows: 280px 35px 47px 43px;
+  }
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktops {
+    display: block;
+    position: relative;
+  }
+}
+
+.item__figcaption {
+  grid-row: 2 / 5;
+  grid-column: 1 / 3;
+  @include tablets {
+    height: 80px;
+    background-color: $input;
+    display: grid;
+    grid-template-columns: 1fr 84px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "A C"
+    "B C" ;
+  }
+  @include desktops {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: $black-op03;
+  }
 }
 
 .item__img{
-  grid-row: 1 / 2;
-  grid-column: 1 / 3;
+  @include phones {
+    // width: 280px;
+    // height: 280px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+  }
+  @include tablets {
+    width: 324px;
+    height: 267px;
+  }
+  @include desktops {
+    width: 400px;
+    height: 267px;
+  }
+}
+
+.main-gallery-img {
+  @include phones {
+
+  }
+  @include tablets {
+    width: 648px;
+    height: 400px;
+  }
+  @include desktops {
+    width: 1200px;
+    height: 400px;
+  }
 }
 
 .item__title{
+  @include phones {
   grid-row: 2 / 3;
   grid-column: 1 / 3;
+  }
+  @include tablets {
+    grid-area: A;
+    transform: translate(16px, 5px);
+  }
+  @include desktops {
+    color: $white;
+  }
 }
 
 .item__author{
+  @include phones {
   grid-row: 3 / 4;
   grid-column: 1 / 3;
+  }
+  @include tablets {
+    grid-area: B;
+    transform: translate(16px, -11px);
+  }
+  @include desktops {
+    color: $white;
+  }
 }
 
 .item__button{
-  margin-top: 11px;
-  grid-row: 4 / 5;
-  grid-column: 1 / 2;
+  @include phones {
+    display: block;
+    margin-top: 11px;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
+  @include tablets {
+    transform: translateY(90%);
+    grid-area: C;
+  }
+  @include desktops {
+    fill: $white;
+  }
 }
 
 .item__number-likes{
-  margin-left: 11px;
-  grid-row: 4 / 5;
-  grid-column: 2 / 3;
+  @include phones {
+    display: inline-block;
+    margin-left: 29px;
+    transform: translateY(-10px);
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
+  @include tablets {
+
+  }
+  @include desktops {
+    color: $white;
+  }
 }
 
+.gallery .container {
+  @include phones {
+
+    }
+    @include tablets {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+    @include desktops {
+
+    }
+}
