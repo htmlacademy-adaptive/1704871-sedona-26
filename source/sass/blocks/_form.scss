@@ -195,6 +195,15 @@
   @include tablets {
     width: 100%;
   }
+  &:hover {
+    background-color: $disabled;
+    transition: background-color 0.4s;
+  }
+  &:focus {
+    background-color: $white;
+    border: 4px solid $disabled;
+    transition: background-color 0.4s;
+  }
 }
 
 
@@ -219,6 +228,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  color: $black-op03;
 }
 
 .fieldset__radio{
@@ -232,6 +242,18 @@
     }
     @include desktops {
       width: 280px;
+    }
+  }
+  &:hover {
+    .radio-style {
+      background-color: $disabled;
+      transition: background-color 0.4s;
+    }
+  }
+  &:active {
+    .radio-style {
+      background-color: $active-elem;
+      transition: background-color 0.4s;
     }
   }
 }
@@ -270,6 +292,7 @@
   transform: translate(-50%, -50%);
 }
 
+
 .fieldset__checkbox {
   margin-top: 15px;
   display: flex;
@@ -293,6 +316,18 @@
     }
     &:nth-child(3) {
       max-width: 180px;
+    }
+  }
+  &:hover {
+    .checkbox-style {
+      background-color: $disabled;
+      transition: background-color 0.4s;
+    }
+  }
+  &:active {
+    .checkbox-style {
+      background-color: $active-elem;
+      transition: background-color 0.4s;
     }
   }
 }
@@ -340,18 +375,32 @@
 }
 
 .fieldset__textarea{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
   min-width: 279px;
   height: 150px;
   background-color: $lightgray;
   resize: none;
   outline: none;
-  border: none;
+  border: 4px solid $lightgray;
+  padding: 15px 0 0 20px;
   @include phones {
     width: 100%;
 
   }
   @include tablets {
     width: 100%;
+  }
+  &:hover {
+    background-color: $disabled;
+    transition: background-color 0.4s;
+  }
+  &:focus {
+    background-color: $white;
+    border: 4px solid $disabled;
+    transition: background-color 0.4s;
   }
 }
 
@@ -360,7 +409,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding: 16px;
+  // padding: 16px;
 }
 
 .form-submit {
@@ -373,6 +422,16 @@
   font-size: 21px;
   line-height: 26px;
   align-self: center;
+  cursor: pointer;
+  &:hover {
+    background-color: $blue-hover;
+    transition: background-color, 0.4s;
+  }
+  &:active {
+    background-color: $blue-active;
+    color: $white-op03;
+    transition: background-color, color, 0.4s;
+  }
   @include tablets {
     max-width: 324px;
   }
