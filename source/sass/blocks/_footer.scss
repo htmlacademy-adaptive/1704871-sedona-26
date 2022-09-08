@@ -71,32 +71,14 @@
   padding: 17px 14px;
 }
 
-.footer__sign {
-  margin-top: 40px;
-  padding: 0 96px 0 96px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  &:hover {
-    .footer__text {
-    color: $blue;
-    transition: 0.4s;
-    fill: $blue;
-    }
-  }
-  @include desktops {
-    margin-top: 0;
-    padding: 0;
-  }
+.footer__logo-img {
+  margin-left: 10px;
+  transform: translateY(10px);
+
 }
 
-.footer__logo-img:hover {
-  color: $blue;
-  transition: 0.4s;
-  fill: $blue;
-  }
-
 .footer__text {
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -108,21 +90,54 @@
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+
 }
 
-.footer__logo {
+
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  @include desktops {
+    flex-direction: row;
+    justify-content: space-between;
+    // padding: 0px 120px 0px 104px;
+  }
+}
+
+.footer__sign {
   align-self: center;
-  padding-left: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-}
+  margin-top: 40px;
 
-.footer .container {
+  &:hover {
+    .footer__logo-img {
+    fill: $blue;
+    transition: fill, 0.4s;
+    }
+    .footer__text {
+    color: $blue;
+    transition: fill, 0.4s;
+    }
+  }
+  &:active {
+    .footer__logo-img {
+    fill: $link-active;
+    transition: fill, 0.4s;
+    }
+    .footer__text {
+    color: $link-active;
+    transition: fill, 0.4s;
+    }
+  }
   @include desktops {
-    display: flex;
-    justify-content: space-between;
-    // padding: 0px 120px 0px 104px;
+    margin-top: 0;
+    padding: 0;
   }
 }

@@ -1,11 +1,12 @@
-.feedback {
+.presentation {
   background-color: $white;
   padding: 38px 18px 0;
   margin: 0 auto;
-  max-width: 494px;
+  width: 100%;
+
 }
 
-.feedback__title{
+.presentation__title{
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -18,7 +19,7 @@
   margin-inline-end: 0;
 }
 
-.feedback__desc{
+.presentation__desc{
   margin: 0 auto;
   padding-top: 25px;
   min-width: 268px;
@@ -30,36 +31,16 @@
   color: $gray;
 }
 
-.feedback__link{
-  display: block;
-  margin: 32px auto 49px;
-  background: $blue;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $white;
-  padding: 16px 37px;
-  &:hover {
-    background-color: $blue-hover;
-    transition: background-color, 0.4s;
-  }
-  &:active {
-    background-color: $blue-active;
-    color: $white-op03;
-    transition: background-color, color, 0.4s;
-  }
-  &:disabled {
-    background-color: $disabled;
-  }
+.presentation__video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.feedback__video {
+.presentation__video-iframe {
   background-image: url("../img/feedback/video.jpg");
-  margin: 0 auto;
-  @include phones {
+  align-self: center;
+    @include phones {
     width: 280px;
     height: 177px;
   }

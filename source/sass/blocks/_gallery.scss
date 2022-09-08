@@ -1,5 +1,5 @@
 .gallery {
-  padding: 0px 20px;
+  // padding: 0px 20px;
   @include tablets {
     padding: 0;
     width: 648px;
@@ -17,7 +17,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
-  margin: 0 auto;
+  margin: 30px auto 0;
   @include phones {
     min-width: 280px;
   }
@@ -25,7 +25,7 @@
     max-width: 520px;
   }
   @include desktops {
-    max-width: 520px;
+    width: 100%;
   }
 }
 
@@ -37,6 +37,8 @@
 
   }
   @include desktops {
+    width: 100%;
+    padding: 0 378px;
 
   }
   font-weight: 400;
@@ -46,15 +48,17 @@
   text-transform: uppercase;
   color: $gray;
   min-width: 303px;
-  margin: 35px 0 auto;
+  margin: 35px 0 35px;
 }
 
-// .gallery__item {
-//   @include tablets {
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
+.gallery__item {
+  @include phones {
+    margin: 0 auto;
+  }
+  @include tablets {
+    margin: 0;
+  }
+}
 
 .item__title {
   @include phones {
@@ -104,8 +108,9 @@
 
 .item {
   @include phones {
+
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 280px;
   grid-template-rows: 280px 35px 47px 43px;
   }
   @include tablets {
@@ -232,12 +237,12 @@
 
 .gallery .container {
   @include phones {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     }
     @include tablets {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+
 
     }
     @include desktops {
