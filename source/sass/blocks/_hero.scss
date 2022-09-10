@@ -1,30 +1,31 @@
-.hero {
-
-}
-
 .hero--index {
-  background-image:
-  url("../img/hero/triangles.svg"),
-  url("../img/hero/background.jpg");
+  background-image: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
   background-position: center bottom -1px, center -24px;
   background-size: 1280px 61px, 1200px 518px;
   background-repeat: no-repeat;
-  padding-top: 90px;
-  padding-bottom: 89px;
+  padding: 90px 0 89px 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/triangles.svg"), url("../img/hero/background@2x.jpg");
+  }
+
   @include tablets {
-    padding-top: 77px;
-    padding-bottom: 97px;
+    padding: 77px 0 97px 0;
   }
 }
 
-.hero--short{
+.hero--short {
   display: block;
-  background: url("./../img/hero/triangles.svg"), url("./../img/hero/background.jpg");
+  background: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
   background-position: center bottom, center bottom;
   background-size: 1280px 61px, 1200px 389px;
   background-repeat: no-repeat;
-  padding-top: 52px;
-  padding-bottom: 67px;
+  padding: 52px 0 67px 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/triangles.svg"), url("../img/hero/background@2x.jpg");
+  }
+
   @include tablets {
     padding-top: 95px;
     padding-bottom: 117px;
@@ -35,19 +36,18 @@
 .hero__icon-because {
   display: block;
   margin: 0 auto;
-  @include phones{
-    margin-top: 31px;
-    }
-  @include tablets{
-  margin-top: 58px;
+  margin-top: 31px;
+
+  @include tablets {
+    margin-top: 58px;
   }
 }
 
 .hero__icon-sedona {
-  @include tablets{
+  @include tablets {
     width: 461px;
     height: 79px;
-    }
+  }
 }
 
 .hero__icon-welcome {
@@ -56,5 +56,5 @@
 }
 
 .hero__icon-sedona--short {
-  margin-top: 0px;
+  margin-top: 0;
 }

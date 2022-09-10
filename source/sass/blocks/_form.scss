@@ -5,13 +5,14 @@
   background-repeat: repeat-x;
   background-position: top;
   margin-top: 28px;
-  @include tablets{
-    display: flex;
+
+  @include tablets {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-image:none;
+    background-image: none;
   }
+
   @include desktops {
     justify-content: space-evenly;
   }
@@ -21,7 +22,6 @@
   width: 100%;
 
   @include tablets {
-
     background-image: url("../img/form/line.svg"), url("../img/form/line.svg");
     background-repeat: no-repeat;
     background-position: center right 8vw, center left 8vw;
@@ -29,10 +29,10 @@
     padding: 0 263px;
     text-align: center;
   }
+
   @include desktops {
     padding: 0 439px;
   }
-  color: #8d8d8d;
 }
 
 .form__title {
@@ -71,6 +71,7 @@
   padding-inline-start: 0;
   padding-inline-end: 0;
   padding-block-end: 0;
+
   @include tablets {
     background-image: none;
   }
@@ -79,17 +80,14 @@
 .fieldset--user-name {
   @include tablets {
     width: 50%;
-    padding-right: 6%;
-    padding-left: 8%;
+    padding: 0 6% 0 8%;
     background-image: url("../img/form/live_vert.svg");
     background-position: right;
     background-repeat: no-repeat;
-
   }
+
   @include desktops {
-    width: 50%;
-    padding-right: 5%;
-    padding-left: 10%;
+    padding: 0 5% 0 10%;
   }
 }
 
@@ -97,27 +95,24 @@
 .fieldset--user-info {
   @include tablets {
     width: 50%;
-    padding-left: 6%;
-    padding-right: 8%;
+    padding: 0 8% 0 6%;
   }
+
   @include desktops {
-    width: 50%;
-    padding-left: 5%;
-    padding-right: 10%;
+    padding: 0 10% 0 5%;
   }
 }
 
-.fieldset--user-impres{
+.fieldset--user-impres {
   @include tablets {
-    padding-left: 12%;
-    padding-right: 12%;
-    // padding: 0 auto;
+    padding: 0 12% 0 12%;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
   @include desktops {
     justify-content: center;
   }
@@ -125,7 +120,6 @@
 
 
 .fieldset--user-emotions {
-  // padding: 0 auto;
   @include tablets {
     width: 100%;
   }
@@ -138,20 +132,19 @@
     flex-direction: column;
     justify-content: center;
   }
+
   @include tablets {
     padding-left: 18vw;
-    width: 100%;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
   @include desktops {
     justify-content: space-between;
     padding: 0 164px;
   }
 }
-
 
 .fieldset__title,
 .user-opinion__title {
@@ -163,6 +156,7 @@
   text-transform: uppercase;
   color: $black;
 }
+
 .fieldset__input {
   margin-top: 16px;
   font-weight: 400;
@@ -172,40 +166,15 @@
   color: $gray;
   display: flex;
   flex-direction: column;
+
   @include tablets {
     width: 100%;
-  }
-}
-.form-label {
-  margin-left: 23px;
-}
-.form-input{
-  margin: 0 auto;
-  background-color: $input;
-  height: 58px;
-  min-width: 280px;
-  border: none;
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: $black;
-  padding-left: 20px;
-  outline: none;
-  @include tablets {
-    width: 100%;
-  }
-  &:hover {
-    background-color: $disabled;
-    transition: background-color 0.4s;
-  }
-  &:focus {
-    background-color: $white;
-    border: 4px solid $disabled;
-    transition: background-color 0.4s;
   }
 }
 
+.form-label {
+  margin-left: 23px;
+}
 
 .form-input--phone {
   background-image: url("./../img/form/phone.svg"), url("./../img/form/rect.svg");
@@ -223,6 +192,36 @@
   padding: 0 60px 0 20px;
 }
 
+.form-input {
+  margin: 0 auto;
+  background-color: $input;
+  height: 58px;
+  min-width: 280px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  padding-left: 20px;
+  outline: none;
+  border: 4px solid $input;
+
+  @include tablets {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $disabled;
+    transition: background-color 0.4s;
+  }
+
+  &:focus {
+    background-color: $white;
+    border: 4px solid $disabled;
+    transition: background-color 0.4s;
+  }
+}
+
 .form-input::placeholder {
   font-family: "PT Sans";
   font-weight: 700;
@@ -231,34 +230,81 @@
   color: $black-op03;
 }
 
-.fieldset__radio{
+.radio-elem:checked + .radio-style::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: $gray;
+  position: absolute;
+  border-radius: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fieldset__radio {
   display: flex;
   height: 58px;
   width: 280px;
 
-  &:first-child{
-    @include tablets {
-      width: 50%;
-    }
-    @include desktops {
-      width: 280px;
-    }
+  // &:first-child {
+  //   @include tablets {
+  //     width: 50%;
+  //   }
+
+  //   @include desktops {
+  //     width: 280px;
+  //   }
+  // }
+
+  // &:hover {
+  //   .radio-style {
+  //     background-color: $disabled;
+  //     transition: background-color 0.4s;
+  //   }
+  // }
+
+  // &:active {
+  //   .radio-style {
+  //     background-color: $active-elem;
+  //     transition: background-color 0.4s;
+
+  //     &::before {
+  //       background-color: $active-radio;
+  //     }
+  //   }
+  // }
+}
+
+.fieldset__radio:first-child {
+  @include tablets {
+    width: 50%;
   }
-  &:hover {
-    .radio-style {
-      background-color: $disabled;
-      transition: background-color 0.4s;
-    }
-  }
-  &:active {
-    .radio-style {
-      background-color: $active-elem;
-      transition: background-color 0.4s;
-    }
+
+  @include desktops {
+    width: 280px;
   }
 }
 
-.radio-text{
+.fieldset__radio:hover {
+  .radio-style {
+    background-color: $disabled;
+    transition: background-color 0.4s;
+  }
+}
+
+.fieldset__radio:active {
+  .radio-style {
+    background-color: $active-elem;
+    transition: background-color 0.4s;
+  }
+
+  .radio-style::before {
+    background-color: $active-radio;
+  }
+}
+
+.radio-text {
   margin-left: 58px;
   font-weight: 700;
   font-size: 18px;
@@ -280,24 +326,18 @@
   align-self: center;
 }
 
-.radio-elem:checked + .radio-style::before{
-  content:"";
-  width: 16px;
-  height: 16px;
-  background-color: $gray;
-  position: absolute;
-  border-radius: 50px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.checkbox-elem:checked + .checkbox-style {
+  background-image: url("../img/form/tick.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-
 
 .fieldset__checkbox {
   margin-top: 15px;
   display: flex;
   height: 46px;
   width: 280px;
+
   @include tablets {
     &:nth-child(1) {
       width: 39%;
@@ -309,6 +349,7 @@
       max-width: 180px;
     }
   }
+
   @include desktops {
     max-width: 180px;
     &:nth-child(1) {
@@ -318,21 +359,29 @@
       max-width: 180px;
     }
   }
+
   &:hover {
     .checkbox-style {
       background-color: $disabled;
       transition: background-color 0.4s;
     }
   }
+
   &:active {
     .checkbox-style {
       background-color: $active-elem;
       transition: background-color 0.4s;
+
+      &::before {
+        background-image: url("../img/form/tick-gray.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
     }
   }
 }
 
-.checkbox-text{
+.checkbox-text {
   margin-left: 58px;
   font-weight: 700;
   font-size: 18px;
@@ -354,27 +403,19 @@
   display: none;
 }
 
-.checkbox-elem:checked + .checkbox-style {
-  background-image: url("../img/form/tick.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 .fieldset__label {
-  @include phones {
-    width: 90%;
+  width: 90%;
 
-  }
   @include tablets {
     width: 648px;
-
   }
+
   @include desktops {
     width: 768px;
   }
 }
 
-.fieldset__textarea{
+.fieldset__textarea {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -386,17 +427,16 @@
   outline: none;
   border: 4px solid $lightgray;
   padding: 15px 0 0 20px;
+
   @include phones {
     width: 100%;
+  }
 
-  }
-  @include tablets {
-    width: 100%;
-  }
   &:hover {
     background-color: $disabled;
     transition: background-color 0.4s;
   }
+
   &:focus {
     background-color: $white;
     border: 4px solid $disabled;
@@ -409,7 +449,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  // padding: 16px;
 }
 
 .form-submit {
@@ -423,25 +462,28 @@
   line-height: 26px;
   align-self: center;
   cursor: pointer;
+
   &:hover {
     background-color: $blue-hover;
     transition: background-color, 0.4s;
   }
+
   &:active {
     background-color: $blue-active;
     color: $white-op03;
     transition: background-color, color, 0.4s;
   }
+
   @include tablets {
     max-width: 324px;
   }
 }
 
-.form-submit__text{
+.form-submit__text {
   align-self: flex-end;
-  margin-right: 20px;
+  margin: 0 20px 52px 0;
   color: $gray;
-  margin-bottom: 52px;
+
   @include tablets {
     max-width: 324px;
     align-self: flex-end;
@@ -453,15 +495,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   @include phones {
-    margin: 48px auto 0px;
+    margin: 48px auto 0;
     width: 320px;
   }
+
   @include tablets {
     flex-direction: row;
     width: 648px;
-
   }
+
   @include desktops {
     width: 768px;
   }

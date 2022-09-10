@@ -1,18 +1,7 @@
-/* advantages */
-
-.advantages{
+.advantages {
   padding-top: 32px;
   max-width: 1200px;
   margin: 0 auto;
-  @include phones {
-
-  }
-  @include tablets {
-
-  }
-  @include desktops {
-
-  }
 }
 
 .advantages__title {
@@ -23,27 +12,17 @@
   text-transform: uppercase;
   color: $black;
   margin: 0 auto;
+
   @include phones {
     min-width: 303px;
   }
+
   @include tablets {
-    max-width: 520px;
-  }
-  @include desktops {
     max-width: 520px;
   }
 }
 
 .advantages__text {
-  @include phones {
-
-  }
-  @include tablets {
-
-  }
-  @include desktops {
-
-  }
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -57,53 +36,15 @@
 .advantages-list {
   display: flex;
   flex-direction: column;
-  @include tablets {
-
-
-    // flex-wrap: wrap;
-  }
-  @include desktops {
-
-
-    // flex-wrap: wrap;
-  }
 }
 
 .advantages-list__item {
-  @include phones {
-
-  }
-  @include tablets {
-
-  }
-
   @include desktops {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-
-// .advantages-list__img{
-//   @include phones {
-//     position: absolute;
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     border: 0;
-//     padding: 0;
-//     white-space: nowrap;
-//     clip-path: inset(100%);
-//     clip: rect(0 0 0 0);
-//     overflow: hidden;
-//   }
-//   @include tablets {
-//     display: block;
-//   }
-//   @include desktops {
-//     display: block;
-//   }
-// }
 
 .advantages-list__title {
   margin: 0;
@@ -113,14 +54,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
+
   @include tablets {
-    margin: 0;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white;
     max-width: 133px;
   }
 }
@@ -135,95 +70,116 @@
 .advantages-list__item--opt1 {
   background-color: $blue;
   background-repeat: no-repeat;
+
   @include phones {
     margin-top: 16px;
-    padding-top: 69px;
-    padding-bottom: 300px;
-    background-image: url("../img/features/white__triantgles.svg"), url("../img/features/photo-sity-tablet.jpg");
+    padding: 69px 0 300px 0;
+    background-image: url("../img/features/white__triangles.svg"), url("../img/features/photo-sity-tablet.jpg");
     background-position: center top, center bottom;
     background-size: 768px 37px, 520px 260px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/features/white__triangles.svg"), url("../img/features/photo-sity-tablet@2x.jpg");
+    }
   }
-  @media (min-width: 520px){
+
+  @media (min-width: 520px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../img/features/photo-sity-tablet.jpg");
-    background-position: center bottom;
-    background-size: 100% 260px;
+    background-image: url("../img/features/white__triangles.svg"), url("../img/features/photo-sity-tablet.jpg");
+    background-size: 768px 37px, 100% 260px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/features/white__triangles.svg"), url("../img/features/photo-sity-tablet@2x.jpg");
+    }
   }
+
   @include tablets {
-    padding-top: 40px;
-    padding-bottom: 44px;
-    padding-right: 66%;
+    padding: 40px 66% 44px 0;
     background-position: right;
     background-size: 66% 100%;
   }
-  @media (min-width: 880px){
+
+  @media (min-width: 880px) {
     background-image: url("../img/features/photo-sity-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/features/photo-sity-desktop@2x.jpg");
+    }
   }
 
   @include desktops {
-    padding-top: 47px;
-    padding-bottom: 56px;
+    padding: 47px 66% 56px 0;
   }
 }
 
 .advantages-list__item--opt2 {
   background-color: $blue;
   background-repeat: no-repeat;
+
   @include phones {
     margin-top: 16px;
-    padding-top: 69px;
-    padding-bottom: 300px;
+    padding: 69px 0 300px 0;
     background-position: center bottom;
     background-size: 520px 260px;
     background-image: url("../img/features/photo-bridge-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/features/photo-bridge-tablet@2x.jpg");
+    }
   }
-  @media (min-width: 520px){
+
+  @media (min-width: 520px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-size: 100% 260px;
   }
+
   @include tablets {
-    padding-top: 40px;
-    padding-bottom: 44px;
-    padding-left: 66%;
+    padding: 40px 0 44px 66%;
     background-position: left;
     background-size: 66% 100%;
   }
-  @media (min-width: 954px){
+
+  @media (min-width: 954px) {
     background-image: url("../img/features/photo-bridge-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/features/photo-bridge-desktop@2x.jpg");
+    }
   }
+
   @include desktops {
-    padding-top: 47px;
-    padding-bottom: 56px;
+    padding: 47px 0 56px 66%;
   }
 }
 
-.advantages-list__item--opt3{
+.advantages-list__item--opt3 {
   background-color: $lightgray;
   display: flex;
+  padding: 26px 0;
 
   @include phones {
     background-image: url("./../img/features/line.svg");
     background-repeat: repeat-x;
-    padding: 26px 0;
     flex-direction: column;
     align-items: center;
   }
+
   @include tablets {
     flex-direction: row;
     justify-content: space-around;
   }
-  padding: 26px 0;
-  .advantages-list__title{
+
+  .advantages-list__title {
     color: $black;
   }
+
   .advantages-list__number,
   .advantages-list__desc {
     color: $gray;
-
   }
 }
 
@@ -235,19 +191,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  @include phones {
 
-  }
-  @include tablets {
-
-  }
   @include desktops {
     margin: 21px auto 0;
   }
 }
 
 .advantages-list__desc {
-  margin: 17px auto 0 ;
+  margin: 17px auto 0;
   max-width: 319px;
   font-weight: 400;
   font-size: 14px;
@@ -255,9 +206,11 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
+
   @include tablets {
     max-width: 192px;
   }
+
   @include tablets {
     max-width: 264px;
   }

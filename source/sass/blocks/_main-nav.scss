@@ -1,20 +1,17 @@
 .main-nav {
   min-height: 56px;
-  @include phones {
   display: flex;
   flex-direction: row-reverse;
-  }
 }
 
 .nav-list {
   width: 100%;
-  @include phones {
-    display: none;
-    background-image: linear-gradient(180deg, $black-op 0%, $black-op02 100%);
-    background-position: bottom;
-    background-size: 800px 10px;
-    background-repeat: no-repeat;
-  }
+  display: none;
+  background-image: linear-gradient(180deg, $black-op 0%, $black-op02 100%);
+  background-position: bottom;
+  background-size: 800px 10px;
+  background-repeat: no-repeat;
+
   @include tablets {
     background-image: none;
     display: flex;
@@ -34,22 +31,26 @@
   padding-top: 18px;
   padding-bottom: 17px;
   width: 20%;
-  &:nth-child(2){
+
+  &:nth-child(2) {
     margin-right: 10%;
   }
-  &:nth-child(3){
+
+  &:nth-child(3) {
     margin-left: 10%;
   }
 }
 
 .nav-list__link {
-text-decoration: none;
-color: $black;
-transition: 0.4s;
+  text-decoration: none;
+  color: $black;
+  transition: 0.4s;
+
   &:active {
     opacity: 0.3;
     transition: 0.4s;
   }
+
   &:hover {
     text-decoration: none;
     color: $blue;
@@ -57,7 +58,7 @@ transition: 0.4s;
   }
 }
 
-.nav-list__link--current{
+.nav-list__link--current {
   color: $current;
 }
 
@@ -67,6 +68,7 @@ transition: 0.4s;
     padding: 17px 20px 17px 17px;
     background: $white;
   }
+
   @include tablets {
     position: absolute;
     width: 1px;
@@ -79,17 +81,20 @@ transition: 0.4s;
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
   &:hover {
     opacity: 0.6;
     transition: opacity 0.4s;
   }
+
   &:active {
     opacity: 0.3;
     transition: opacity 0.4s;
   }
 }
+
 .main-nav__burger-plank:nth-child(2) {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .main-nav__burger-plank {

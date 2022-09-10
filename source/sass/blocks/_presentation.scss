@@ -3,10 +3,9 @@
   padding: 38px 18px 0;
   margin: 0 auto;
   width: 100%;
-
 }
 
-.presentation__title{
+.presentation__title {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -19,7 +18,7 @@
   margin-inline-end: 0;
 }
 
-.presentation__desc{
+.presentation__desc {
   margin: 0 auto;
   padding-top: 25px;
   min-width: 268px;
@@ -40,16 +39,22 @@
 .presentation__video-iframe {
   background-image: url("../img/feedback/video.jpg");
   align-self: center;
-    @include phones {
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/feedback/video@2x.jpg");
+  }
+
+  @include phones {
     width: 280px;
     height: 177px;
   }
+
   @include tablets {
     width: 648px;
     height: 500px;
   }
+
   @include desktops {
     width: 800px;
-    height: 500px;
   }
 }

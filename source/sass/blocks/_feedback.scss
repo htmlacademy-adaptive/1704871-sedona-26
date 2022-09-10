@@ -5,7 +5,7 @@
   max-width: 494px;
 }
 
-.feedback__title{
+.feedback__title {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -18,7 +18,7 @@
   margin-inline-end: 0;
 }
 
-.feedback__desc{
+.feedback__desc {
   margin: 0 auto;
   padding-top: 25px;
   min-width: 268px;
@@ -30,7 +30,7 @@
   color: $gray;
 }
 
-.feedback__link{
+.feedback__link {
   display: block;
   margin: 32px auto 49px;
   background: $blue;
@@ -42,33 +42,19 @@
   text-transform: uppercase;
   color: $white;
   padding: 16px 37px;
+
   &:hover {
     background-color: $blue-hover;
     transition: background-color, 0.4s;
   }
+
   &:active {
     background-color: $blue-active;
     color: $white-op03;
     transition: background-color, color, 0.4s;
   }
+
   &:disabled {
     background-color: $disabled;
-  }
-}
-
-.feedback__video {
-  background-image: url("../img/feedback/video.jpg");
-  margin: 0 auto;
-  @include phones {
-    width: 280px;
-    height: 177px;
-  }
-  @include tablets {
-    width: 648px;
-    height: 500px;
-  }
-  @include desktops {
-    width: 800px;
-    height: 500px;
   }
 }
