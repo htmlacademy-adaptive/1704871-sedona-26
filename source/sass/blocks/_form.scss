@@ -197,7 +197,7 @@
   background-color: $input;
   height: 58px;
   min-width: 280px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -223,7 +223,7 @@
 }
 
 .form-input::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -246,34 +246,6 @@
   display: flex;
   height: 58px;
   width: 280px;
-
-  // &:first-child {
-  //   @include tablets {
-  //     width: 50%;
-  //   }
-
-  //   @include desktops {
-  //     width: 280px;
-  //   }
-  // }
-
-  // &:hover {
-  //   .radio-style {
-  //     background-color: $disabled;
-  //     transition: background-color 0.4s;
-  //   }
-  // }
-
-  // &:active {
-  //   .radio-style {
-  //     background-color: $active-elem;
-  //     transition: background-color 0.4s;
-
-  //     &::before {
-  //       background-color: $active-radio;
-  //     }
-  //   }
-  // }
 }
 
 .fieldset__radio:first-child {
@@ -332,52 +304,52 @@
   background-repeat: no-repeat;
 }
 
+
+.fieldset__checkbox:nth-child(1),
+.fieldset__checkbox:nth-child(3) {
+  @include tablets {
+    width: 39%;
+  }
+
+  @include desktops {
+    max-width: 180px;
+  }
+}
+
+.fieldset__checkbox:last-child {
+  @include tablets {
+    max-width: 180px;
+  }
+}
+
 .fieldset__checkbox {
   margin-top: 15px;
   display: flex;
   height: 46px;
   width: 280px;
 
-  @include tablets {
-    &:nth-child(1) {
-      width: 39%;
-    }
-    &:nth-child(3) {
-      width: 39%;
-    }
-    &:last-child {
-      max-width: 180px;
-    }
-  }
-
   @include desktops {
     max-width: 180px;
-    &:nth-child(1) {
-      max-width: 180px;
-    }
-    &:nth-child(3) {
-      max-width: 180px;
-    }
+  }
+}
+
+.fieldset__checkbox:hover {
+  .checkbox-style {
+    background-color: $disabled;
+    transition: background-color 0.4s;
+  }
+}
+
+.fieldset__checkbox:active {
+  .checkbox-style {
+    background-color: $active-elem;
+    transition: background-color 0.4s;
   }
 
-  &:hover {
-    .checkbox-style {
-      background-color: $disabled;
-      transition: background-color 0.4s;
-    }
-  }
-
-  &:active {
-    .checkbox-style {
-      background-color: $active-elem;
-      transition: background-color 0.4s;
-
-      &::before {
-        background-image: url("../img/form/tick-gray.svg");
-        background-position: center center;
-        background-repeat: no-repeat;
-      }
-    }
+  .checkbox-style::before {
+    background-image: url("../img/form/tick-gray.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -445,7 +417,7 @@
 }
 
 .fieldset__textarea::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

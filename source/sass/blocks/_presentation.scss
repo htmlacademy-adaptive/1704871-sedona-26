@@ -39,6 +39,7 @@
 .presentation__video-iframe {
   background-image: url("../img/feedback/video.jpg");
   align-self: center;
+  border: 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/feedback/video@2x.jpg");

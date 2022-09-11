@@ -2,6 +2,10 @@
   padding-top: 32px;
   max-width: 1200px;
   margin: 0 auto;
+
+  @include tablets {
+    padding-top: 49px;
+  }
 }
 
 .advantages__title {
@@ -14,11 +18,14 @@
   margin: 0 auto;
 
   @include phones {
-    min-width: 303px;
+    width: 273px;
   }
 
   @include tablets {
-    max-width: 520px;
+    width: 520px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
@@ -29,13 +36,21 @@
   text-align: center;
   text-transform: uppercase;
   color: $gray;
-  min-width: 303px;
+  padding: 0 10px;
   margin: 35px 0 auto;
+
+  @include tablets {
+    margin: 29px 0 auto;
+  }
 }
 
 .advantages-list {
   display: flex;
   flex-direction: column;
+
+  @include tablets {
+    margin-top: 38px;
+  }
 }
 
 .advantages-list__item {
@@ -56,16 +71,39 @@
   color: $white;
 
   @include tablets {
-    max-width: 133px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: block;
+    width: 133px;
+    font-weight: 400;
+    font-size: 21px;
   }
 }
+
 
 .advantages-list__art3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
+
+  @include phones {
+    padding: 0 15px 49px 15px;
+  }
+  &:last-child {
+    @include desktops {
+      padding: 0 15px 49px 15px;
+    }
+  }
 }
+
+// .advantages-list__art3:last-child {
+//   @include phones {
+//     padding: 0 15px 25px 15px;
+//   }
+// }
+
+
 
 .advantages-list__item--opt1 {
   background-color: $blue;
@@ -96,21 +134,35 @@
   }
 
   @include tablets {
+    min-height: 256px;
     padding: 40px 66% 44px 0;
+    background-image: url("../img/features/photo-sity-tablet.jpg");
     background-position: right;
-    background-size: 66% 100%;
-  }
-
-  @media (min-width: 880px) {
-    background-image: url("../img/features/photo-sity-desktop.jpg");
+    background-size: 67% 100%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/features/photo-sity-desktop@2x.jpg");
+      background-image: url("../img/features/photo-sity-tablet@2x.jpg");
+    }
+
+    .advantages-list__number {
+      margin: 14px auto 0;
+    }
+
+    .advantages-list__desc {
+      margin: 23px auto 0;
+      max-width: 220px;
     }
   }
 
   @include desktops {
     padding: 47px 66% 56px 0;
+    background-image: url("../img/features/photo-sity-desktop.jpg");
+    background-position: right;
+    background-size: 67% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/features/photo-sity-desktop@2x.jpg");
+    }
   }
 }
 
@@ -120,7 +172,7 @@
 
   @include phones {
     margin-top: 16px;
-    padding: 69px 0 300px 0;
+    padding: 41px 0 292px 0;
     background-position: center bottom;
     background-size: 520px 260px;
     background-image: url("../img/features/photo-bridge-tablet.jpg");
@@ -138,9 +190,22 @@
   }
 
   @include tablets {
-    padding: 40px 0 44px 66%;
+    max-height: 256px;
+    padding: 44px 0 44px 67%;
     background-position: left;
-    background-size: 66% 100%;
+    background-size: 67% 100%;
+
+    .advantages-list__title {
+      width: 150px;
+    }
+
+    .advantages-list__number {
+      margin-top: 12px;
+    }
+    .advantages-list__desc {
+      margin-top: 23px;
+      width: 170px;
+    }
   }
 
   @media (min-width: 954px) {
@@ -154,6 +219,7 @@
   @include desktops {
     padding: 47px 0 56px 66%;
   }
+
 }
 
 .advantages-list__item--opt3 {
@@ -162,15 +228,20 @@
   padding: 26px 0;
 
   @include phones {
-    background-image: url("./../img/features/line.svg");
+    background-image: url("../img/features/line.svg");
     background-repeat: repeat-x;
     flex-direction: column;
     align-items: center;
+    padding: 26px 0 0 0;
   }
 
   @include tablets {
     flex-direction: row;
     justify-content: space-around;
+    padding: 43px 0 0 0;
+    .advantages-list__desc {
+      margin-top: 25px;
+    }
   }
 
   .advantages-list__title {
@@ -180,6 +251,7 @@
   .advantages-list__number,
   .advantages-list__desc {
     color: $gray;
+    max-width: 254px;
   }
 }
 
@@ -199,7 +271,7 @@
 
 .advantages-list__desc {
   margin: 17px auto 0;
-  max-width: 319px;
+  max-width: 286px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -214,4 +286,19 @@
   @include tablets {
     max-width: 264px;
   }
+}
+
+.advantages-list__art3:nth-child(2),
+.advantages-list__art3:last-child {
+  @include tablets {
+    .advantages-list__desc {
+      padding: 0 39px;
+    }
+  }
+}
+
+.advantages-list__art3:first-child {
+  @include tablets {
+  margin-bottom: 20px;
+}
 }
