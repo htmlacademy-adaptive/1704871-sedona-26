@@ -70,7 +70,7 @@
             <form class="user-opinion" action="https://echo.htmlacademy.ru/" method="post">
 
               <fieldset class="fieldset fieldset--user-name">
-                <h2 class="fieldset__title">Представьтесь:</h2>
+                <h2 class="fieldset__title fieldset__title--user-name">Представьтесь:</h2>
                 <label class="fieldset__input">
                   <span class="form-label">ИМЯ*:</span>
                   <input class="form-input"  name="name" type="text">
@@ -86,7 +86,7 @@
 
 
               <fieldset class="fieldset fieldset--user-info">
-                <h2 class="fieldset__title">контактная информация:</h2>
+                <h2 class="fieldset__title fieldset__title--user-info">контактная информация:</h2>
                 <label class="fieldset__input">
                   <span class="form-label">КОНТАКТНЫЙ ТЕЛЕФОН*:</span><input class="form-input form-input--phone" name="phone" placeholder="Введите телефон" type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                 </label>
@@ -152,7 +152,7 @@
               <fieldset class="fieldset fieldset--submit">
                 <input class="form-submit" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
                 <p class="form-submit__text">
-                  * - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
+                  * &mdash; ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
                 </p>
               </fieldset>
 

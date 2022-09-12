@@ -2,8 +2,12 @@
   background-color: $white;
   padding: 34px 0 23px 0;
 
+  @include tablets {
+    padding: 34px 57px 36px 63px;
+  }
+
   @include desktops {
-    padding: 36px 120px 36px 104px;
+    padding: 33px 115px 36px 122px;
   }
 }
 
@@ -19,7 +23,7 @@
   margin-inline-start: 0;
   margin-inline-end: 0;
 
-  @include desktops {
+  @include tablets {
     align-self: center;
   }
 }
@@ -30,7 +34,7 @@
   padding: 0 80px;
   margin-top: 33px;
 
-  @include desktops {
+  @include tablets {
     margin-top: 0;
     padding: 0;
   }
@@ -111,7 +115,7 @@
   display: flex;
   flex-direction: column;
 
-  @include desktops {
+  @include tablets {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -128,9 +132,10 @@
   margin-inline-end: 0;
   margin-top: 31px;
 
-  @include desktops {
+  @include tablets {
     margin-top: 0;
     padding: 0;
+    transform: translateY(-8px);
   }
 }
 

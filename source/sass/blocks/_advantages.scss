@@ -6,6 +6,10 @@
   @include tablets {
     padding-top: 49px;
   }
+
+  @include desktops {
+    padding-top: 59px;
+  }
 }
 
 .advantages__title {
@@ -51,6 +55,10 @@
   @include tablets {
     margin-top: 38px;
   }
+
+  @include desktops {
+    margin-top: 28px;
+  }
 }
 
 .advantages-list__item {
@@ -90,6 +98,7 @@
   @include phones {
     padding: 0 15px 49px 15px;
   }
+
   &:last-child {
     @include desktops {
       padding: 0 15px 49px 15px;
@@ -102,8 +111,6 @@
 //     padding: 0 15px 25px 15px;
 //   }
 // }
-
-
 
 .advantages-list__item--opt1 {
   background-color: $blue;
@@ -144,6 +151,10 @@
       background-image: url("../img/features/photo-sity-tablet@2x.jpg");
     }
 
+    .advantages-list__title {
+      font-weight: 700;
+    }
+
     .advantages-list__number {
       margin: 14px auto 0;
     }
@@ -155,13 +166,18 @@
   }
 
   @include desktops {
-    padding: 47px 66% 56px 0;
+    padding: 47px 66% 36px 0;
     background-image: url("../img/features/photo-sity-desktop.jpg");
     background-position: right;
     background-size: 67% 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/features/photo-sity-desktop@2x.jpg");
+    }
+
+    .advantages-list__desc {
+      margin: 23px auto 0;
+      max-width: 268px;
     }
   }
 }
@@ -197,11 +213,13 @@
 
     .advantages-list__title {
       width: 150px;
+      font-weight: 700;
     }
 
     .advantages-list__number {
       margin-top: 12px;
     }
+
     .advantages-list__desc {
       margin-top: 23px;
       width: 170px;
@@ -217,9 +235,14 @@
   }
 
   @include desktops {
-    padding: 47px 0 56px 66%;
-  }
+    padding: 50px 0 56px 67%;
+    margin-top: 36px;
 
+    .advantages-list__desc {
+      margin-top: 25px;
+      width: 218px;
+    }
+  }
 }
 
 .advantages-list__item--opt3 {
@@ -239,8 +262,21 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 43px 0 0 0;
+
     .advantages-list__desc {
       margin-top: 25px;
+    }
+
+    .advantages-list__title {
+      font-weight: 700;
+    }
+  }
+
+  @include desktops {
+    padding: 43px 0 9px 0;
+
+    .advantages-list__desc {
+      width: 343px;
     }
   }
 
@@ -252,6 +288,10 @@
   .advantages-list__desc {
     color: $gray;
     max-width: 254px;
+
+    @include tablets {
+      max-width: 350px;
+    }
   }
 }
 
@@ -265,7 +305,7 @@
   color: $white;
 
   @include desktops {
-    margin: 21px auto 0;
+    margin: 12px auto 0;
   }
 }
 
@@ -299,6 +339,18 @@
 
 .advantages-list__art3:first-child {
   @include tablets {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  @include desktops {
+    margin-bottom: 0;
+  }
 }
+
+.advantages-list__br {
+  display: none;
+
+  @include desktops {
+    display: block;
+  }
 }

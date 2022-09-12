@@ -4,9 +4,10 @@
   background-image: url("../img/features/line.svg");
   background-repeat: repeat-x;
   background-position: top;
-  margin-top: 28px;
+  margin: 54px 0 0 0;
 
   @include tablets {
+    margin: 106px 0 67px 0;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -14,39 +15,34 @@
   }
 
   @include desktops {
+    margin: 69px 0 67px 0;
     justify-content: space-evenly;
   }
 }
 
-.user-opinion__title {
-  width: 100%;
-
-  @include tablets {
-    background-image: url("../img/form/line.svg"), url("../img/form/line.svg");
-    background-repeat: no-repeat;
-    background-position: center right 8vw, center left 8vw;
-    background-size: 16vw 1px;
-    padding: 0 263px;
-    text-align: center;
-  }
-
-  @include desktops {
-    padding: 0 439px;
-  }
-}
-
 .form__title {
-  margin-top: 36px;
+  margin: 38px 0 0 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
   color: $black;
+
+  @include tablets {
+    margin: 64px 0 0 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @include desktops {
+    margin: 114px 0 0 0;
+  }
 }
 
 .form__text {
-  margin-top: 36px;
+  margin: 23px 0 0 0;
   min-width: 282px;
   font-weight: 400;
   font-size: 14px;
@@ -54,6 +50,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $gray;
+
+  @include tablets {
+    max-width: 440px;
+    margin: 23px auto 0;
+  }
+  @include desktops {
+    margin: 32px auto 0;
+  }
 }
 
 
@@ -80,6 +84,7 @@
 .fieldset--user-name {
   @include tablets {
     width: 50%;
+    margin: 0 0 65px 0;
     padding: 0 6% 0 8%;
     background-image: url("../img/form/live_vert.svg");
     background-position: right;
@@ -87,24 +92,30 @@
   }
 
   @include desktops {
-    padding: 0 5% 0 10%;
+    padding: 0 4% 0 10%;
+    margin: 0 0 75px 0;
   }
 }
 
 
 .fieldset--user-info {
+  margin: 67px 0 65px 0;
+
   @include tablets {
+    margin: 0 0 65px 0;
     width: 50%;
-    padding: 0 8% 0 6%;
+    padding: 0 7% 0 6%;
   }
 
   @include desktops {
-    padding: 0 10% 0 5%;
+    padding: 0 10% 0 7%;
   }
 }
 
 .fieldset--user-impres {
+  margin: 14px 0 44px 0;
   @include tablets {
+    margin: 22px 0 44px 0;
     padding: 0 12% 0 12%;
     width: 100%;
     display: flex;
@@ -114,7 +125,9 @@
   }
 
   @include desktops {
-    justify-content: center;
+    margin: 37px 0 68px 0;
+    padding: 0 0 0 174px;
+    justify-content: flex-start;
   }
 }
 
@@ -126,6 +139,7 @@
 }
 
 .fieldset--user-visited {
+  margin: 5px 0 51px 0;
   @include phones {
     width: 100%;
     display: flex;
@@ -134,7 +148,8 @@
   }
 
   @include tablets {
-    padding-left: 18vw;
+    margin: 14px 0 44px 0;
+    padding: 0 0 0 19%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -142,12 +157,15 @@
 
   @include desktops {
     justify-content: space-between;
-    padding: 0 164px;
+    margin: 44px 0 87px 0;
+    padding: 0 156px 0 166px;
   }
 }
 
 .fieldset__title,
 .user-opinion__title {
+  margin-block-start: 0;
+  margin-block-end: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -157,8 +175,58 @@
   color: $black;
 }
 
+.user-opinion__title {
+  width: 100%;
+
+  @include tablets {
+    background-image: url("../img/form/line.svg"), url("../img/form/line.svg");
+    background-repeat: no-repeat;
+    background-position: center right 8vw, center left 8vw;
+    background-size: 16vw 1px;
+    padding: 0 233px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  @include desktops {
+    padding: 0 439px;
+  }
+}
+
+.fieldset__title {
+  @include tablets {
+    // position: absolute;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.fieldset__title--user-name {
+  margin: 0 0 8px 0;
+
+  @include tablets {
+    transform: translateX(21px);
+  }
+}
+
+.fieldset__title--user-info {
+  margin: 0 0 8px 0;
+
+  @include tablets {
+    transform: translateX(-24px);
+  }
+}
+
+
+.user-opinion__title {
+  margin-top: 0;
+}
+
 .fieldset__input {
-  margin-top: 16px;
+  margin: 19px 0 -3px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -173,23 +241,11 @@
 }
 
 .form-label {
-  margin-left: 23px;
-}
+  margin: 0 0 0 17px;
 
-.form-input--phone {
-  background-image: url("./../img/form/phone.svg"), url("./../img/form/rect.svg");
-  background-position: center right 20px, right;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding: 0 60px 0 20px;
-}
-
-.form-input--email {
-  background-image: url("./../img/form/mail.svg"), url("./../img/form/rect.svg");
-  background-position: center right 20px, right;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding: 0 60px 0 20px;
+  @include tablets {
+    margin: 0 0 0 14px;
+  }
 }
 
 .form-input {
@@ -202,7 +258,7 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
   outline: none;
   border: 4px solid $input;
 
@@ -219,6 +275,30 @@
     background-color: $white;
     border: 4px solid $disabled;
     transition: background-color 0.4s;
+  }
+}
+
+.form-input--email {
+  background-image: url("./../img/form/mail.svg"), url("./../img/form/rect.svg");
+  background-position: center right 20px, right;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0 70px 0 20px;
+
+  @include tablets {
+    padding: 0 70px 0 10px;
+  }
+}
+
+.form-input--phone {
+  background-image: url("./../img/form/phone.svg"), url("./../img/form/rect.svg");
+  background-position: center right 20px, right;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0 70px 0 20px;
+
+  @include tablets {
+    padding: 0 70px 0 10px;
   }
 }
 
@@ -243,9 +323,13 @@
 }
 
 .fieldset__radio {
+  margin: 2px 0 0 0;
   display: flex;
   height: 58px;
   width: 280px;
+  &:last-child{
+    margin-right: 0;
+  }
 }
 
 .fieldset__radio:first-child {
@@ -254,7 +338,14 @@
   }
 
   @include desktops {
-    width: 280px;
+    width: 308px;
+  }
+}
+
+.fieldset__radio:nth-child(2) {
+
+  @include desktops {
+    width: 308px;
   }
 }
 
@@ -277,7 +368,7 @@
 }
 
 .radio-text {
-  margin-left: 58px;
+  margin-left: 63px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -308,17 +399,17 @@
 .fieldset__checkbox:nth-child(1),
 .fieldset__checkbox:nth-child(3) {
   @include tablets {
-    width: 39%;
+    width: 41%;
   }
 
   @include desktops {
-    max-width: 180px;
+    width: 180px;
   }
 }
 
 .fieldset__checkbox:last-child {
   @include tablets {
-    max-width: 180px;
+    max-width: 191px;
   }
 }
 
@@ -354,7 +445,7 @@
 }
 
 .checkbox-text {
-  margin-left: 58px;
+  margin-left: 63px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -388,6 +479,7 @@
 }
 
 .fieldset__textarea {
+  margin: 18px 0 0 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -398,7 +490,7 @@
   resize: none;
   outline: none;
   border: 4px solid $lightgray;
-  padding: 15px 0 0 20px;
+  padding: 16px 0 0 16px;
 
   @include phones {
     width: 100%;
@@ -413,6 +505,10 @@
     background-color: $white;
     border: 4px solid $disabled;
     transition: background-color 0.4s;
+  }
+  @include tablets {
+    margin: 24px 0 0 0;
+    height: 161px;
   }
 }
 
@@ -447,19 +543,25 @@
   }
 
   @include tablets {
-    max-width: 324px;
+    width: 324px;
   }
 }
 
 .form-submit__text {
   align-self: flex-end;
-  margin: 0 20px 52px 0;
+  margin: 2px 20px 19px 0;
   color: $gray;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
 
   @include tablets {
     max-width: 324px;
     align-self: flex-end;
-    margin: auto 0;
+    margin: 0 0 14px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -467,13 +569,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  @include phones {
-    margin: 48px auto 0;
-    width: 320px;
-  }
+  margin: 55px auto 0;
+  width: 320px;
 
   @include tablets {
+    margin: 47px auto 0;
     flex-direction: row;
     width: 648px;
   }

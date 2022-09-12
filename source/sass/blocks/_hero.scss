@@ -17,20 +17,23 @@
 }
 
 .hero--short {
+  padding: 51px 0 67px 0;
   display: block;
   background: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
   background-position: center bottom, center bottom;
-  background-size: 1280px 61px, 1200px 389px;
+  background-size: 1200px 57px, 1200px 518px;
   background-repeat: no-repeat;
-  padding: 52px 0 67px 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/triangles.svg"), url("../img/hero/background@2x.jpg");
   }
 
   @include tablets {
-    padding-top: 95px;
-    padding-bottom: 117px;
+    padding: 95px 0 117px 0;
+    background-position: center bottom, center bottom;
+  }
+  @include desktops {
+    padding: 101px 0 122px 0;
   }
 }
 
@@ -75,4 +78,12 @@
 
 .hero__icon-sedona--short {
   margin-top: 0;
+  width: 229px;
+  height: 39px;
+
+  @include tablets {
+    transform: translateX(2px);
+    width: 457px;
+    height: 78px;
+  }
 }
