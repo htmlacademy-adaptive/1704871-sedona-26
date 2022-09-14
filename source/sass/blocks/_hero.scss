@@ -1,9 +1,9 @@
 .hero--index {
+  padding: 90px 0 89px 0;
   background-image: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
   background-position: center bottom -1px, center -39px;
   background-size: 1280px 61px, 1200px 518px;
   background-repeat: no-repeat;
-  padding: 90px 0 89px 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/triangles.svg"), url("../img/hero/background@2x.jpg");
@@ -18,7 +18,6 @@
 
 .hero--short {
   padding: 51px 0 67px 0;
-  display: block;
   background: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
   background-position: center bottom, center bottom;
   background-size: 1200px 57px, 1200px 518px;
@@ -32,37 +31,34 @@
     padding: 95px 0 117px 0;
     background-position: center bottom, center bottom;
   }
+
   @include desktops {
     padding: 101px 0 122px 0;
   }
 }
 
-.hero__icon-sedona,
-.hero__icon-because {
+.hero__icon-sedona {
   display: block;
   margin: 0 auto;
   margin-top: 31px;
 
   @include tablets {
-    margin-top: 58px;
+    width: 461px;
+    height: 79px;
   }
 }
 
 .hero__icon-because {
   transform: translateX(-5px);
+  display: block;
+  margin: 0 auto;
+  margin-top: 31px;
+
   @include tablets {
+    margin-top: 55px;
     width: 295px;
     height: 80px;
-    margin-top: 55px;
     transform: translateX(-9px);
-  }
-}
-
-.hero__icon-sedona {
-  @include tablets {
-    width: 461px;
-    height: 79px;
-    margin-top: 50px;
   }
 }
 

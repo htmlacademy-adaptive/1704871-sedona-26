@@ -14,16 +14,13 @@
 }
 
 .feedback__title {
+  @include margin-fix;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: $black;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
 
   @include tablets {
     font-weight: 700;
@@ -50,6 +47,7 @@
 
 .feedback__br {
   display: none;
+
   @include tablets {
     display: block;
   }

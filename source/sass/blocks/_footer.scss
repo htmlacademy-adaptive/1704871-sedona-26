@@ -18,13 +18,12 @@
   text-transform: uppercase;
   color: $black;
   text-align: center;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+
+  @include margin-fix;
 
   @include tablets {
     align-self: center;
+    transform: translateY(-8px);
   }
 }
 
@@ -33,6 +32,7 @@
   justify-content: center;
   padding: 0 80px;
   margin-top: 33px;
+  list-style-type: none;
 
   @include tablets {
     margin-top: 0;
@@ -97,6 +97,7 @@
 }
 
 .footer__text {
+  @include margin-fix;
   position: relative;
   font-style: normal;
   font-weight: 400;
@@ -105,10 +106,6 @@
   text-transform: uppercase;
   color: $black;
   align-self: center;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
 }
 
 .footer .container {
@@ -122,43 +119,39 @@
 }
 
 .footer__sign {
+  @include margin-fix;
   align-self: center;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  margin-top: 31px;
+  margin-top: 6px;
 
   @include tablets {
     margin-top: 0;
     padding: 0;
-    transform: translateY(-8px);
-  }
-}
-
-.footer__sign:hover {
-  .footer__logo-img {
-    fill: $blue;
-    transition: fill, 0.4s;
+    transform: translateY(-17px);
   }
 
-  .footer__text {
-    color: $blue;
-    transition: fill, 0.4s;
-  }
-}
+  &:hover {
+    .footer__logo-img {
+      fill: $blue;
+      transition: fill, 0.4s;
+    }
 
-.footer__sign:active {
-  .footer__logo-img {
-    fill: $link-active;
-    transition: fill, 0.4s;
+    .footer__text {
+      color: $blue;
+      transition: fill, 0.4s;
+    }
   }
 
-  .footer__text {
-    color: $link-active;
-    transition: fill, 0.4s;
+  &:active {
+    .footer__logo-img {
+      fill: $link-active;
+      transition: fill, 0.4s;
+    }
+
+    .footer__text {
+      color: $link-active;
+      transition: fill, 0.4s;
+    }
   }
 }

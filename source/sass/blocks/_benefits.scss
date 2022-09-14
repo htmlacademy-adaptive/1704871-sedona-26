@@ -1,4 +1,5 @@
 .benefits {
+  @include margin-fix;
   margin: 0 auto;
 
   @include tablets {
@@ -11,9 +12,8 @@
 .benefits-item {
   padding: 25px 0 0 20px;
   display: grid;
-  grid-template-columns: 45px 256px;
+  grid-template-columns: 45px 255px;
   grid-template-rows: 34px 1fr;
-
 
   &:nth-child(2) {
     padding: 22px 0 0 20px;
@@ -35,10 +35,10 @@
 
     &:last-child {
       padding: 60px 0 34px 20px;
+    }
 
-      .benefits-item__desc {
-        max-width: 192px;
-      }
+    &:last-child .benefits-item__desc {
+      max-width: 192px;
     }
   }
 
@@ -54,10 +54,7 @@
 }
 
 .benefits-item__title {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+  @include margin-fix;
   grid-column-start: 2;
   grid-row-start: 1;
   font-weight: 700;

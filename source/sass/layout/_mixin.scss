@@ -19,3 +19,26 @@ $disabled: #E5E5E5;
 $active-elem: #D5D5D5;
 $active-radio: rgba(51, 51, 51, 0.3);
 $input-placeholder: rgba(242, 242, 242, 1);
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin margin-fix {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  padding-block-end: 0;
+  padding-inline-end: 0;
+}

@@ -16,19 +16,24 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
-  margin: 30px auto 0;
+  margin: 38px auto 0;
   min-width: 280px;
 
   @include tablets {
     max-width: 520px;
+    margin: 66px auto 0;
+    font-size: 30px;
+    line-height: 26px;
   }
 
   @include desktops {
     width: 100%;
+    margin: 99px auto 0;
   }
 }
 
 .gallery__text {
+  padding: 0 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -36,19 +41,40 @@
   text-transform: uppercase;
   color: $gray;
   min-width: 303px;
-  margin: 35px 0 35px;
+  margin: 25px 0 61px 0;
+
+  @include tablets {
+    margin: 32px 0 80px 0;
+    padding: 0 105px;
+    font-size: 14px;
+    line-height: 21px;
+  }
 
   @include desktops {
     width: 100%;
-    padding: 0 378px;
+    padding: 0 378px 8px;
   }
 }
 
 .gallery__item {
-  margin: 0 auto;
+  margin: 0 auto 21px;
+
+  &:last-child {
+    margin: 0 auto 0;
+  }
 
   @include tablets {
     margin: 0;
+
+    &:last-child {
+      margin: 0 50% 0 0;
+    }
+  }
+
+  @include desktops {
+    &:last-child {
+      margin: 0 0 0 0;
+    }
   }
 }
 
@@ -117,6 +143,7 @@
 }
 
 .item__title {
+  @include margin-fix;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -127,6 +154,7 @@
   @include phones {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
+    margin: 15px 0 0 2px;
   }
 
   @include tablets {
@@ -153,7 +181,7 @@
 
   @include tablets {
     grid-area: B;
-    transform: translate(16px, -11px);
+    transform: translate(21px, 4px);
   }
 
   @include desktops {
@@ -166,8 +194,7 @@
   display: block;
   width: 23px;
   height: 21px;
-  background-image: url("../../img/gallery/like-icon.svg");
-  background-repeat: no-repeat;
+  background: url("../../img/gallery/like-icon.svg") no-repeat;
   margin-top: 11px;
   grid-row: 4 / 5;
   grid-column: 1 / 2;
@@ -191,10 +218,13 @@
   text-transform: uppercase;
   color: $black;
   display: inline-block;
-  margin-left: 29px;
-  transform: translateY(-10px);
+  margin: 6px 0 0 39px;
   grid-row: 4 / 5;
   grid-column: 1 / 2;
+
+  @include tablets {
+    margin: 3px 0 0 33px;
+  }
 
   @include desktops {
     color: $white;
