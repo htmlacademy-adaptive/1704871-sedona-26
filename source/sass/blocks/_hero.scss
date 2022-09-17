@@ -39,12 +39,12 @@
 
 .hero__icon-sedona {
   display: block;
-  margin: 0 auto;
-  margin-top: 31px;
+  margin: 31px auto 0;
 
   @include tablets {
     width: 461px;
     height: 79px;
+    margin: 51px auto 0;
   }
 }
 

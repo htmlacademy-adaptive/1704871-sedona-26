@@ -1,11 +1,21 @@
 .benefits {
-  @include margin-fix;
-  margin: 0 auto;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  margin: 301px auto 0;
+  background: $white;
 
   @include tablets {
+    margin: 0;
+    grid-area: C;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  @include desktops {
+    min-height: 331px;
   }
 }
 
@@ -20,21 +30,21 @@
   }
 
   &:last-child {
-    padding: 23px 0 34px 20px;
+    padding: 22px 0 50px 20px;
   }
 
   @include tablets {
-    padding: 60px 0 49px 20px;
+    padding: 60px 0 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &:nth-child(2) {
-      padding: 60px 0 0 20px;
+      padding: 60px 0 0 0;
     }
 
     &:last-child {
-      padding: 60px 0 34px 20px;
+      padding: 54px 0 34px 0;
     }
 
     &:last-child .benefits-item__desc {
@@ -54,7 +64,8 @@
 }
 
 .benefits-item__title {
-  @include margin-fix;
+  margin-block-start: 0;
+  margin-block-end: 0;
   grid-column-start: 2;
   grid-row-start: 1;
   font-weight: 700;

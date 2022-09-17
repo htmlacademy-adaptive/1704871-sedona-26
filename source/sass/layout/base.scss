@@ -45,6 +45,7 @@ body,
 html {
   height: 100%;
   background-color: $input;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,10 +63,10 @@ a {
 // ul,
 // li {
 //   list-style-type: none;
-//   @include margin-fix;
 // }
 
 figure,
 p {
-  @include margin-fix;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }

@@ -1,5 +1,7 @@
 .nav-list {
-  @include margin-fix;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
   @include tablets {
     background-color: $white;
     background-image: none;
@@ -11,10 +13,60 @@
   background: linear-gradient(180deg, $black-op 0%, $black-op02 100%) bottom / 800px 10px no-repeat $blue;
 }
 
+.nav-list__link {
+  @media (max-width: 767px) {
+    width: 100vw;
+    // padding: 1px 0;
+    display: block;
+  }
+
+  @include tablets {
+    color: $black;
+  }
+  text-decoration: none;
+  color: $white;
+  transition: 0.4s;
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.4s;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $blue;
+    transition: 0.4s;
+  }
+
+  &--current {
+    @include tablets {
+      color: $current;
+    }
+  }
+}
+
 .nav-list__item {
   @media (max-width: 767px) {
     width: 100%;
     height: 56px;
+
+    &:hover {
+      background-color: $blue-hover;
+      transition: background-color 0.6s;
+    }
+
+    &:hover .nav-list__link {
+      color: $white;
+    }
+
+    &:active {
+      background-color: $blue-active;
+      transition: background-color 0.6s;
+    }
+
+    &:active .nav-list__link {
+      color: $white-op03;
+    }
   }
   display: block;
   font-weight: 700;
@@ -41,29 +93,7 @@
   }
 }
 
-.nav-list__link {
-  @include tablets {
-    color: $black;
-  }
-  text-decoration: none;
-  color: $white;
-  transition: 0.4s;
 
-  &:active {
-    opacity: 0.3;
-    transition: 0.4s;
-  }
-
-  &:hover {
-    text-decoration: none;
-    color: $blue;
-    transition: 0.4s;
-  }
-
-  &--current {
-    color: $current;
-  }
-}
 
 .main-nav__burger {
   @include phones {

@@ -143,7 +143,8 @@
 }
 
 .item__title {
-  @include margin-fix;
+  margin-block-start: 0;
+  margin-block-end: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

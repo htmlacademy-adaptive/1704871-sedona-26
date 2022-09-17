@@ -19,8 +19,6 @@
   color: $black;
   text-align: center;
 
-  @include margin-fix;
-
   @include tablets {
     align-self: center;
     transform: translateY(-8px);
@@ -97,7 +95,6 @@
 }
 
 .footer__text {
-  @include margin-fix;
   position: relative;
   font-style: normal;
   font-weight: 400;
@@ -119,14 +116,13 @@
 }
 
 .footer__sign {
-  @include margin-fix;
   align-self: center;
   display: flex;
   flex-direction: row;
-  margin-top: 6px;
+  margin: 16px 0 0 0;
 
   @include tablets {
-    margin-top: 0;
+    margin: 0;
     padding: 0;
     transform: translateY(-17px);
   }

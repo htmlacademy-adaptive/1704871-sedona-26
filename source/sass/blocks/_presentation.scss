@@ -20,7 +20,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
-  @include margin-fix;
+  margin-block-start: 0;
+  margin-block-end: 0;
 
   @include tablets {
     font-size: 30px;
