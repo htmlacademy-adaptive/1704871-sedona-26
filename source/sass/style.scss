@@ -1,10 +1,10 @@
+@import "layout/normalize.scss";
+
 @import "layout/_mixin.scss";
 
 @import "layout/_media.scss";
 
 @import "layout/base.scss";
-
-@import "layout/normalize.scss";
 
 @import "layout/fonts.scss";
 
@@ -12,11 +12,11 @@
 
 @import "blocks/_main-nav.scss";
 
-@import "blocks/_main-nav--opened.scss";
-
 @import "blocks/_hero.scss";
 
 @import "blocks/_feedback.scss";
+
+@import "blocks/_presentation.scss";
 
 @import "blocks/_map.scss";
 
