@@ -78,19 +78,20 @@
   &--user-name {
     @include tablets {
       width: 50%;
-      margin: 0 0 65px 0;
+      margin: 0 0 62px 0;
       // padding: 0 6% 0 7%;
       padding: 0 46px 0 57px;
     }
 
     @include desktops {
       padding: 0 4% 0 10%;
-      margin: 0 0 72px 0;
+      margin: 0 0 70px 0;
     }
   }
 
   &--user-info {
-    margin: 67px 0 65px 0;
+    margin: 63px 0 57px 0;
+    padding: 0 20px 0 20px;
 
     @include tablets {
       background-image: url("./../../img/form/live_vert.svg");
@@ -99,12 +100,12 @@
       margin: 0 0 65px 0;
       width: 50%;
       // padding: 0 7% 0 5%;
-      padding: 0 53px 0 41px;
+      padding: 0 59px 0 42px;
     }
 
     @include desktops {
-      padding: 0 10% 0 7%;
-      background-position: 18px 1px;
+      padding: 0 121px 0 78px;
+      background-position: 12px 1px;
     }
   }
 
@@ -112,7 +113,7 @@
     margin: 14px 0 44px 0;
 
     @include tablets {
-      margin: 22px 0 45px 0;
+      margin: 20px 0 45px 0;
       padding: 0 12% 0 12%;
       width: 100%;
       display: flex;
@@ -145,7 +146,7 @@
     }
 
     @include tablets {
-      margin: 14px 0 37px 0;
+      margin: 14px 0 41px 0;
       padding: 0 0 0 19%;
       flex-direction: row;
       flex-wrap: wrap;
@@ -154,7 +155,7 @@
 
     @include desktops {
       justify-content: space-between;
-      margin: 44px 0 82px 0;
+      margin: 44px 0 86px 0;
       padding: 0 156px 0 166px;
     }
   }
@@ -180,6 +181,12 @@
 
     @include tablets {
       transform: translateX(21px);
+      margin: 0 0 16px 0;
+    }
+
+    @include desktops {
+      transform: translateX(29px);
+      margin: 0 0 16px 0;
     }
   }
 
@@ -187,8 +194,15 @@
     margin: 0 0 8px 0;
 
     @include tablets {
-      transform: translateX(-24px);
+      transform: translateX(-20px);
+      margin: 0 0 16px 0;
     }
+
+    @include desktops {
+      transform: translateX(-34px);
+      margin: 0 0 16px 0;
+    }
+
   }
 }
 
@@ -224,7 +238,7 @@
 
 
 .fieldset__input {
-  margin: 19px 0 -3px 0;
+  margin: 11px 0 4px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -243,6 +257,10 @@
   margin: 0 0 0 17px;
 
   @include tablets {
+    margin: 0 0 0 18px;
+  }
+
+  @include desktops {
     margin: 0 0 0 14px;
   }
 }
@@ -289,7 +307,11 @@
     width: 100%;
     padding: 0 70px 0 20px;
     @include tablets {
-      padding: 0 70px 0 10px;
+      padding: 0 70px 0 20px;
+    }
+
+    @include desktops {
+      padding: 0 70px 0 15px;
     }
 
     &:hover {
@@ -313,7 +335,11 @@
     padding: 0 70px 0 20px;
 
     @include tablets {
-      padding: 0 70px 0 10px;
+      padding: 0 70px 0 20px;
+    }
+
+    @include desktops {
+      padding: 0 70px 0 15px;
     }
 
     &:hover {
@@ -351,7 +377,7 @@
 
   &:first-child {
     @include tablets {
-      width: 50%;
+      width: 51%;
     }
 
     @include desktops {

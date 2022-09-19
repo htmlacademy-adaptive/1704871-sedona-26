@@ -76,6 +76,7 @@
       margin: 0 0 0 0;
     }
   }
+
 }
 
 .item {
@@ -131,6 +132,9 @@
 }
 
 .main-gallery-img {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
   @include tablets {
     width: 648px;
     height: 400px;
@@ -155,12 +159,12 @@
   @include phones {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
-    margin: 15px 0 0 2px;
+    margin: 16px 0 0 0;
   }
 
   @include tablets {
     grid-area: A;
-    transform: translate(16px, 5px);
+    transform: translate(19px, 7px);
   }
 
   @include desktops {
@@ -169,6 +173,8 @@
 }
 
 .item__author {
+  margin-block-start: 0;
+  margin-block-end: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

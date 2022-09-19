@@ -1,6 +1,6 @@
 .presentation {
   background-color: $white;
-  padding: 10px 18px 0;
+  padding: 11px 18px 0 20px;
   margin: 0 auto;
   width: 100%;
 
@@ -31,7 +31,7 @@
 
 .presentation__desc {
   margin: 0 auto;
-  padding: 25px 7px 41px;
+  padding: 27px 7px 41px;
   min-width: 268px;
   font-weight: 400;
   font-size: 14px;
@@ -55,11 +55,11 @@
   flex-direction: column;
 
   @include tablets {
-    margin: 0 0 42px 0;
+    margin: 0 0 31px 0;
   }
 
   @include desktops {
-    margin: 0 0 85px 0;
+    margin: 0 0 73px 0;
   }
 }
 

@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 32px;
+  padding: 35px 0 0 0;
   margin: 0 auto;
   font-weight: 400;
   font-size: 14px;
@@ -23,6 +23,7 @@
   text-transform: uppercase;
   color: $black;
   margin: 0 auto;
+  padding: 0 6px 0 0;
 
   @include phones {
     width: 273px;
@@ -45,6 +46,10 @@
   @include tablets {
     margin: 29px 0 auto;
   }
+
+  @include desktops {
+    padding: 0px 12px 0 8px;
+  }
 }
 
 .advantages-list {
@@ -63,8 +68,16 @@
 }
 
 .advantages-list__text {
+  padding: 0 6px 0 0;
+
+  @include tablets {
+    min-height: 100%;
+    padding: 0 6px 0 6px;
+  }
+
   @include desktops {
     min-height: 100%;
+    padding: 2px 0 0 0;
   }
 }
 
@@ -78,53 +91,16 @@
   &--contrast {
     color: $white;
   }
-
-  &--little-place,
-  &--beautiful-road,
-  &--few-tourists {
-    background-color: $lightgray;
-    display: flex;
-
-    @include phones {
-      background-image: url("../img/features/line.svg");
-      background-repeat: repeat-x;
-      flex-direction: column;
-      align-items: center;
-      padding: 26px 32px 25px;
-    }
-
-    @include tablets {
-      min-height: 256px;
-      width: calc(100% / 3);
-      padding: 43px 40px 0;
-
-      .advantages-list__desc {
-        margin-top: 25px;
-      }
-
-      .advantages-list__title {
-        font-weight: 700;
-      }
-    }
-
-  @include desktops {
-    padding: 43px 0 9px 0;
-
-    .advantages-list__desc {
-      width: 343px;
-    }
-  }
-}
 }
 
 .advantages-list__item--real-town {
   width: 100%;
-  margin: 17px 0 0 0;
-  padding: 70px 0 0 0;
+  margin: 16px 0 0 0;
+  padding: 68px 0 0 0;
   background-color: $blue;
   background-repeat: no-repeat;
   background-image: url("../img/features/white__triangles.svg"), url("../img/features/photo-sity-tablet.jpg");
-  background-position: center top, center 228px;
+  background-position: center top, center 226px;
   background-size: 768px 37px, 520px 260px;
 
   @media (min-width: 320px) and (min-resolution: 2dppx) {
@@ -143,7 +119,7 @@
     padding: 0;
     background-image: url("../img/features/photo-sity-tablet.jpg");
     background-position: top right;
-    background-size: 67% 256px;
+    background-size: 66.5% 256px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/features/photo-sity-tablet@2x.jpg");
@@ -170,7 +146,7 @@
   @include desktops {
     background-image: url("../img/features/photo-sity-desktop.jpg");
     background-position: top right;
-    background-size: 67% 256px;
+    background-size: 66.8% 256px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/features/photo-sity-desktop@2x.jpg");
@@ -193,24 +169,12 @@
       max-width: 270px;
     }
   }
-
-
-
-  // @include desktops {
-  //   padding: 47px 66% 36px 0;
-
-
-  //   .advantages-list__desc {
-  //     margin: 23px auto 0;
-  //     max-width: 268px;
-  //   }
-  // }
 }
 
 .advantages-list__item--devil-bridge {
   width: 100%;
   margin-top: 0;
-  padding: 41px 0 292px 0;
+  padding: 41px 0 293px 0;
   background-color: $blue;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -227,9 +191,9 @@
 
   @include tablets {
     max-height: 256px;
-    padding: 44px 0 44px 67%;
+    padding: 44px 0 44px 66.5%;
     background-position: left;
-    background-size: 67% 100%;
+    background-size: 66.5% 100%;
 
     .advantages-list__title {
       margin: 0 auto;
@@ -248,7 +212,6 @@
 
     @media (min-width: 954px) {
       background-image: url("../img/features/photo-bridge-desktop.jpg");
-
     }
 
     @media (min-width: 954px) and (min-resolution: 2dppx) {
@@ -256,16 +219,73 @@
     }
   }
 
+  @include desktops {
+    padding: 51px 0 55px 66.5%;
 
-  // @include desktops {
-  //   padding: 50px 0 56px 67%;
-  //   margin-top: 36px;
+    .advantages-list__desc {
+      margin-top: 24px;
+      width: 220px;
+    }
+  }
+}
 
-  //   .advantages-list__desc {
-  //     margin-top: 25px;
-  //     width: 218px;
-  //   }
-  // }
+.advantages-list__item--little-place,
+.advantages-list__item--beautiful-road,
+.advantages-list__item--few-tourists {
+  background-color: $lightgray;
+  display: flex;
+
+  @include phones {
+    background-image: url("../img/features/line.svg");
+    background-repeat: repeat-x;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px 32px 24px;
+  }
+
+  @include tablets {
+    min-height: 256px;
+    width: calc(100% / 3);
+    padding: 43px 40px 0;
+
+    .advantages-list__desc {
+      margin-top: 25px;
+    }
+
+    .advantages-list__title {
+      font-weight: 700;
+    }
+  }
+
+  @include desktops {
+    padding: 43px 0 9px 0;
+
+    .advantages-list__desc {
+      width: 343px;
+    }
+  }
+}
+
+.advantages-list__item--little-place .advantages-list__desc {
+  @include desktops {
+    max-width: 400px;
+    width: 304px;
+    margin: 24px 0 0 0;
+  }
+}
+
+.advantages-list__item--beautiful-road .advantages-list__desc {
+  @include tablets {
+    width: 200px;
+    margin-right: 26px;
+  }
+
+  @include desktops {
+    max-width: 400px;
+    width: 274px;
+    margin: 24px 0 0 0;
+    padding: 0 5px 0 0;
+  }
 }
 
 .advantages-list__title {
@@ -385,3 +405,26 @@
 // .advantages-list__desc {
 
 // }
+
+
+
+
+  // @include desktops {
+  //   padding: 47px 66% 36px 0;
+
+
+  //   .advantages-list__desc {
+  //     margin: 23px auto 0;
+  //     max-width: 268px;
+  //   }
+  // }
+
+    // @include desktops {
+  //   padding: 50px 0 56px 67%;
+  //   margin-top: 36px;
+
+  //   .advantages-list__desc {
+  //     margin-top: 25px;
+  //     width: 218px;
+  //   }
+  // }

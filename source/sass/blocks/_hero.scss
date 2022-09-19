@@ -1,9 +1,10 @@
 .hero--index {
-  padding: 90px 0 89px 0;
+  padding: 90px 0 86px 0;
   background-image: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
-  background-position: center bottom -1px, center -39px;
-  background-size: 1280px 61px, 1200px 518px;
+  background-position: center bottom -2px, center 0;
+  background-size: 1280px 61px, 901px 389px;
   background-repeat: no-repeat;
+  background-color: $blue-hover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/triangles.svg"), url("../img/hero/background@2x.jpg");
@@ -11,7 +12,7 @@
 
   @include tablets {
     padding: 77px 0 92px 0;
-    background-position: center bottom -1px, center 1px;
+    background-position: center bottom -2px, center 0;
     background-size: 1200px 59px, 1200px 518px;
   }
 }
@@ -20,8 +21,9 @@
   padding: 51px 0 67px 0;
   background: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
   background-position: center bottom, center bottom;
-  background-size: 1200px 57px, 1200px 518px;
+  background-size: 1200px 57px, 901px 389px;
   background-repeat: no-repeat;
+  background-color: $blue-hover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/triangles.svg"), url("../img/hero/background@2x.jpg");
@@ -29,7 +31,8 @@
 
   @include tablets {
     padding: 95px 0 117px 0;
-    background-position: center bottom, center bottom;
+    background-position: center bottom -2px, center bottom;
+    background-size: 1200px 59px, 1200px 518px;
   }
 
   @include desktops {
@@ -49,13 +52,11 @@
 }
 
 .hero__icon-because {
-  transform: translateX(-5px);
   display: block;
-  margin: 0 auto;
-  margin-top: 31px;
+  margin: 32px calc(50vw - 86px) 0 calc(50vw - 96px);
 
   @include tablets {
-    margin-top: 55px;
+    margin: 55px auto 0;
     width: 295px;
     height: 80px;
     transform: translateX(-9px);
