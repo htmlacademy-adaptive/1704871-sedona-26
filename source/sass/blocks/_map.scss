@@ -1,0 +1,12 @@
+.map__iframe {
+  width: 100%;
+  background-image: url("../img/feedback/map-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/feedback/map-desktop@2x.jpg");
+  }
+
+  @include phones {
+    height: 350px;
+  }
+}

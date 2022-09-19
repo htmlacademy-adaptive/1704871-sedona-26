@@ -1,1 +1,31 @@
-// Начните писать стили здесь
+@import "layout/normalize.scss";
+
+@import "layout/_mixin.scss";
+
+@import "layout/_media.scss";
+
+@import "layout/base.scss";
+
+@import "layout/fonts.scss";
+
+@import "blocks/_page-header.scss";
+
+@import "blocks/_main-nav.scss";
+
+@import "blocks/_hero.scss";
+
+@import "blocks/_feedback.scss";
+
+@import "blocks/_presentation.scss";
+
+@import "blocks/_map.scss";
+
+@import "blocks/_advantages.scss";
+
+@import "blocks/_benefits.scss";
+
+@import "blocks/_footer.scss";
+
+@import "blocks/_form.scss";
+
+@import "blocks/_gallery.scss";

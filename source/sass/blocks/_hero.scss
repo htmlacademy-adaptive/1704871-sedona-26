@@ -1,0 +1,86 @@
+.hero--index {
+  padding: 90px 0 86px 0;
+  background-image: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
+  background-position: center bottom -2px, center 0;
+  background-size: 1280px 61px, 901px 389px;
+  background-repeat: no-repeat;
+  background-color: $blue-hover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/triangles.svg"), url("../img/hero/background@2x.jpg");
+  }
+
+  @include tablets {
+    padding: 77px 0 92px 0;
+    background-position: center bottom -2px, center 0;
+    background-size: 1200px 59px, 1200px 518px;
+  }
+}
+
+.hero--short {
+  padding: 51px 0 67px 0;
+  background: url("../img/hero/triangles.svg"), url("../img/hero/background.jpg");
+  background-position: center bottom, center bottom;
+  background-size: 1200px 57px, 901px 389px;
+  background-repeat: no-repeat;
+  background-color: $blue-hover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/triangles.svg"), url("../img/hero/background@2x.jpg");
+  }
+
+  @include tablets {
+    padding: 95px 0 117px 0;
+    background-position: center bottom -2px, center bottom;
+    background-size: 1200px 59px, 1200px 518px;
+  }
+
+  @include desktops {
+    padding: 101px 0 122px 0;
+  }
+}
+
+.hero__icon-sedona {
+  display: block;
+  margin: 31px auto 0;
+
+  @include tablets {
+    width: 461px;
+    height: 79px;
+    margin: 51px auto 0;
+  }
+}
+
+.hero__icon-because {
+  display: block;
+  margin: 32px calc(50vw - 86px) 0 calc(50vw - 96px);
+
+  @include tablets {
+    margin: 55px auto 0;
+    width: 295px;
+    height: 80px;
+    transform: translateX(-9px);
+  }
+}
+
+.hero__icon-welcome {
+  display: block;
+  margin: 0 auto;
+
+  @include tablets {
+    width: 257px;
+    height: 85px;
+  }
+}
+
+.hero__icon-sedona--short {
+  margin-top: 0;
+  width: 229px;
+  height: 39px;
+
+  @include tablets {
+    transform: translateX(2px);
+    width: 457px;
+    height: 78px;
+  }
+}
