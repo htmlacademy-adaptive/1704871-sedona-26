@@ -1,0 +1,92 @@
+.form-input {
+  margin: 0 auto;
+  background-color: $input;
+  height: 58px;
+  min-width: 280px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  padding: 0 20px 0 20px;
+  border: none;
+  outline: 4px solid $color-opasity;
+  outline-offset: -4px;
+
+  @include tablets {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $disabled;
+  }
+
+  &:focus {
+    background-color: $white;
+    outline: 4px solid $disabled;
+  }
+
+  &::placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black-op03;
+  }
+
+  &--email {
+    background-image: url("../img/form/mail.svg"), linear-gradient(to right, $input calc(100% - 56px), $gray-input 56px);
+    background-position: center right 20px, 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0 70px 0 20px;
+
+    @include tablets {
+      padding: 0 70px 0 20px;
+    }
+
+    @include desktops {
+      padding: 0 70px 0 15px;
+    }
+
+    &:hover {
+      background-image: url("../img/form/mail.svg"), linear-gradient(to right, $disabled calc(100% - 56px), $gray-input 56px);
+      background-position: center right 20px, 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:focus {
+      background-image: url("../img/form/mail.svg"), linear-gradient(to right, $white calc(100% - 56px), $gray-input 56px);
+      background-position: center right 20px, 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--phone {
+    background-image: url("../img/form/phone.svg"), linear-gradient(to right, $input calc(100% - 56px), $gray-input 56px);
+    background-position: center right 20px, 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0 70px 0 20px;
+
+    @include tablets {
+      padding: 0 70px 0 20px;
+    }
+
+    @include desktops {
+      padding: 0 70px 0 15px;
+    }
+
+    &:hover {
+      background-image: url("../img/form/phone.svg"), linear-gradient(to right, $disabled calc(100% - 56px), $gray-input 56px);
+      background-position: center right 20px, 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:focus {
+      background-image: url("../img/form/phone.svg"), linear-gradient(to right, $white calc(100% - 56px), $gray-input 56px);
+      background-position: center right 20px, 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}

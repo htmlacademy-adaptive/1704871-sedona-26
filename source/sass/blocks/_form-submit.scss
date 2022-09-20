@@ -1,0 +1,31 @@
+.form-submit {
+  width: 281px;
+  background: $blue;
+  color: $white;
+  border: none;
+  padding: 18px 34px 13px 32px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  align-self: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-hover;
+    transition: background-color, 0.4s;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: $white-op03;
+    transition: background-color, color, 0.4s;
+  }
+
+  @include tablets {
+    width: 324px;
+  }
+
+  @include desktops {
+    width: 387px;
+  }
+}

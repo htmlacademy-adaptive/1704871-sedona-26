@@ -195,6 +195,7 @@
 
 .benefits-item__br-desk {
   display: none;
+
   @include desktops {
     display: block;
   }
