@@ -1,0 +1,16 @@
+.checkbox-elem:checked + .checkbox-style {
+  background-image: url("../img/form/tick.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.checkbox-elem {
+  display: none;
+}
+
+.checkbox-elem:active + .checkbox-style {
+  background-image: url("../img/form/tick-gray.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+

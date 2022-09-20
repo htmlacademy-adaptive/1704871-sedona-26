@@ -1,0 +1,11 @@
+.form-label {
+  margin: 0 0 0 17px;
+
+  @include tablets {
+    margin: 0 0 0 18px;
+  }
+
+  @include desktops {
+    margin: 0 0 0 14px;
+  }
+}

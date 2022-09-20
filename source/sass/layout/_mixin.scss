@@ -1,26 +1,26 @@
-$white: #FFFFFF;
+$white: #ffffff;
 $white-op03: rgba(255, 255, 255, 0.3);
-$input: #F2F2F2;
-$blue: #81B3D2;
-$blue-hover: #669EC0;
-$blue-active: #5496BD;
+$input: #f2f2f2;
+$blue: #81b3d2;
+$blue-hover: #669ec0;
+$blue-active: #5496bd;
 $blue-top: #bcd3e0;
 $blue-bottom: #4886aa;
 $gray: #333333;
-$gray-input: #E6E6E6;
+$gray-input: #e6e6e6;
 $black: #000000;
 $black-op02: rgba(0, 0, 0, 0.2);
 $black-op03: rgba(0, 0, 0, 0.3);
 $black-op: rgba(0, 0, 0, 0);
-$lightgray: #EEEEEE;
+$lightgray: #eeeeee;
 $current: #766357;
-$link-active: #D9D9D9;
-$transp: rgba(255,255,255,0);
-$disabled: #E5E5E5;
-$active-elem: #D5D5D5;
+$link-active: #d9d9d9;
+$transp: rgba(255, 255, 255, 0);
+$disabled: #e5e5e5;
+$active-elem: #d5d5d5;
 $active-radio: rgba(51, 51, 51, 0.3);
 $input-placeholder: rgba(242, 242, 242, 1);
-$color-opasity: rgba(117, 190, 218, 0.0);
+$color-opasity: rgba(117, 190, 218, 0);
 
 @mixin visually-hidden {
   position: absolute;

@@ -1,0 +1,15 @@
+.main-gallery-img {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  @include tablets {
+    width: 648px;
+    height: 400px;
+  }
+
+  @include desktops {
+    width: 1200px;
+    height: 400px;
+  }
+}

@@ -50,23 +50,27 @@
 }
 
 .presentation__video {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  // width: 100%;
+  display: block;
+  margin: 0 auto;
 
   @include tablets {
-    margin: 0 0 31px 0;
+    margin: 0 auto 31px;
   }
 
   @include desktops {
-    margin: 0 0 73px 0;
+    margin: 0 auto 73px;
   }
 }
 
-.presentation__video-iframe {
+.presentation__video--iframe {
   background-image: url("../img/feedback/video.jpg");
   align-self: center;
   border: 0;
+
+  @media (max-width: 767px) {
+    background-size: cover;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/feedback/video@2x.jpg");
