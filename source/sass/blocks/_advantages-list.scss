@@ -17,13 +17,13 @@
   padding: 0 6px 0 0;
 
   @include tablets {
-    min-height: 100%;
-    padding: 0 6px 0 6px;
+    min-height: 256px;
+    padding: 0 6px 30px 6px;
   }
 
   @include desktops {
-    min-height: 100%;
-    padding: 2px 0 0 0;
+    min-height: 256px;
+    padding: 2px 0 30px 0;
   }
 }
 
@@ -60,7 +60,8 @@
   @include tablets {
     display: grid;
     grid-template-columns: 33% 67%;
-    grid-template-rows: 256px 1fr;
+    // grid-template-rows: 256px 1fr;
+    min-height: 256px;
     grid-template-areas: "A B" "C C";
     padding: 0;
     background-image: url("../img/features/photo-sity-tablet.jpg");
@@ -136,7 +137,7 @@
   }
 
   @include tablets {
-    max-height: 256px;
+    min-height: 256px;
     padding: 44px 0 44px 66.5%;
     background-position: left;
     background-size: 66.5% 100%;
